@@ -76,19 +76,6 @@ export default class App extends Component {
 
           <Navbar.Collapse eventKey={0}>
             <Nav navbar>
-              {user && <LinkContainer to="/chat">
-                <NavItem eventKey={1}>Chat</NavItem>
-              </LinkContainer>}
-
-              <LinkContainer to="/widgets">
-                <NavItem eventKey={2}>Widgets</NavItem>
-              </LinkContainer>
-              <LinkContainer to="/survey">
-                <NavItem eventKey={3}>Survey</NavItem>
-              </LinkContainer>
-              <LinkContainer to="/about">
-                <NavItem eventKey={4}>About Us</NavItem>
-              </LinkContainer>
 
               {!user &&
                 <LinkContainer to="/login">
@@ -103,11 +90,6 @@ export default class App extends Component {
             </Nav>
             {user &&
               <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
-            <Nav navbar pullRight>
-              <NavItem eventKey={1} target="_blank" title="View on Github" href="https://github.com/erikras/react-redux-universal-hot-example">
-                <i className="fa fa-github"/>
-              </NavItem>
-            </Nav>
           </Navbar.Collapse>
         </Navbar>
 
