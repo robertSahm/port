@@ -75,8 +75,8 @@ export default class App extends Component {
           </Navbar.Header>
 
           <Navbar.Collapse eventKey={0}>
-            <Nav navbar>
 
+            <Nav navbar>
               {!user &&
                 <LinkContainer to="/login">
                   <NavItem eventKey={5}>Login</NavItem>
@@ -88,8 +88,9 @@ export default class App extends Component {
                   </NavItem>
                 </LinkContainer>}
             </Nav>
+
             {user &&
-              <p className={styles.loggedInMessage + ' navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
+              <p className={'navbar-text'}>Logged in as <strong>{user.name}</strong>.</p>}
           </Navbar.Collapse>
         </Navbar>
 
