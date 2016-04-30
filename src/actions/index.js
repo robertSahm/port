@@ -63,7 +63,7 @@ export function signupUser({ email, password }) {
 }
 
 export function authError(error) {
-  return { 
+  return {
     type: AUTH_ERROR,
     payload: error
   }

@@ -1,11 +1,20 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import * as actions from '../../actions'
 
 class UserProfile extends Component {
+  componentWillMount() {
+    this.props.fetchMessage()
+  }
   render() {
     return (
-      <div> this is the user profile protected page </div>
+      <div>{this.props.message}</div>
     )
   }
 }
 
-export default UserProfile
+function mapStateToProps(state) {
+  return { message: state.auth.message }
+}
+
+export default connect(mapStateToProps, actions)(UserProfile)
