@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { reduxForm } from 'redux-form'
 import * as actions from '../../actions'
 
-class Signup extends Component { 
+class Signup extends Component {
   handleFormSubmit(formProps) {
     // call action creator to sign up the user!
     this.props.signupUser(formProps)
@@ -19,7 +19,7 @@ class Signup extends Component {
   }
 
   render() {
-    const { handleSubmit, fields:{ email, password, passwordConfirm }} = this.props
+    const { handleSubmit, fields: { email, password, passwordConfirm }} = this.props
 
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
@@ -48,15 +48,15 @@ class Signup extends Component {
 function validate(formProps) {
   const errors = {}
 
-  if(!formProps.email) {
+  if (!formProps.email) {
     errors.email = 'Please enter an email'
   }
 
-  if(!formProps.password) {
+  if (!formProps.password) {
     errors.password = 'Please enter a password'
   }
 
-  if(!formProps.passwordConfirm) {
+  if (!formProps.passwordConfirm) {
     errors.passwordConfirm = 'Please confirm your password'
   }
 

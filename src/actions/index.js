@@ -4,7 +4,7 @@ import {
   AUTH_USER,
   UNAUTH_USER,
   AUTH_ERROR,
-  SIGNUP_USER,
+  // SIGNUP_USER,
   FETCH_MESSAGE,
   FETCH_USERS
 } from './types'

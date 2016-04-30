@@ -23,7 +23,10 @@ export default () => {
       <Route path="signin" component={Signin} />
       <Route path="signout" component={Signout} />
       <Route path="signup" component={Signup} />
+
+      { /* Protected routes */ }
       <Route path="userprofile" component={RequireAuth(UserProfile)} />
+
       { /* Catch all route */ }
       <Route path="*" component={NotFound} status={404} />
     </Route>

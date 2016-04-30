@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
+import Jumbotron from '../../components/Jumbotron/Jumbotron'
 
 export default class Home extends Component {
   render() {
@@ -7,7 +8,7 @@ export default class Home extends Component {
     return (
       <div className={styles.home}>
         <Helmet title="Home"/>
-        <h1>Home Component, Y'all</h1>
+        <Jumbotron />
       </div>
     );
   }
