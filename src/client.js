@@ -12,7 +12,7 @@ import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ReduxAsyncConnect } from 'redux-async-connect';
 import useScroll from 'scroll-behavior/lib/useStandardScroll';
-
+import { AUTH_USER } from './actions/types'
 import getRoutes from './routes';
 
 const client = new ApiClient();
@@ -20,6 +20,14 @@ const _browserHistory = useScroll(() => browserHistory)();
 const dest = document.getElementById('content');
 const store = createStore(_browserHistory, client, window.__data);
 const history = syncHistoryWithStore(_browserHistory, store);
+
+const token = localStorage.getItem('token')
+// If we have a token, consider the user signed in
+if (token) {
+  // we need up update application state
+  store.dispatch({ type: AUTH_USER })
+}
+
 
 function initSocket() {
   const socket = io('', {path: '/ws'});
@@ -30,7 +38,6 @@ function initSocket() {
   socket.on('msg', (data) => {
     console.log(data);
   });
-
   return socket;
 }
 

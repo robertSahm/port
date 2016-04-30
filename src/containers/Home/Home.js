@@ -7,29 +7,7 @@ export default class Home extends Component {
     return (
       <div className={styles.home}>
         <Helmet title="Home"/>
-        <div className="container">
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-          <h1>holla<br /></h1>
-        </div>
+        <h1>Home Component, Y'all</h1>
       </div>
     );
   }

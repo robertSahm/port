@@ -38,7 +38,7 @@ export default class Html extends Component {
           {/* styles (will be present only in production with webpack extract text plugin) */}
           {Object.keys(assets.styles).map((style, key) =>
             <link href={assets.styles[style]} key={key} media="screen, projection"
-                  rel="stylesheet" type="text/css" charSet="UTF-8"/>
+              rel="stylesheet" type="text/css" charSet="UTF-8"/>
           )}
 
           {/* (will be present only in development mode) */}
@@ -48,7 +48,7 @@ export default class Html extends Component {
           { Object.keys(assets.styles).length === 0 ? <style dangerouslySetInnerHTML={{__html: require('../theme/bootstrap.config.js') + require('../containers/App/App.scss')._style}}/> : null }
         </head>
         <body>
-          <div id="content" dangerouslySetInnerHTML={{__html: content}}/>
+          <div id="content" className="container" dangerouslySetInnerHTML={{__html: content}}/>
           <script dangerouslySetInnerHTML={{__html: `window.__data=${serialize(store.getState())};`}} charSet="UTF-8"/>
           <script src={assets.javascript.main} charSet="UTF-8"/>
         </body>
