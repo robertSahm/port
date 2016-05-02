@@ -9,6 +9,13 @@ import {
   FETCH_USERS
 } from './types'
 
+export function authError(error) {
+  return {
+    type: AUTH_ERROR,
+    payload: error
+  }
+}
+
 const ROOT_URL = 'http://localhost:3090'
 
 //
@@ -23,9 +30,7 @@ export function fetchUsers() {
   }
 }
 
-//
 // Auth Actions
-//
 export function signinUser({ email, password }) {
   return function(dispatch) { // Redux thunk middleware using dispatch method
     // Submit email/password to the server
@@ -62,19 +67,6 @@ export function signupUser({ email, password }) {
   }
 }
 
-export function authError(error) {
-  return {
-    type: AUTH_ERROR,
-    payload: error
-  }
-}
-
-export function authError(error) {
-  return {
-    type: AUTH_ERROR,
-    payload: error
-  }
-}
 
 export function signoutUser() {
   localStorage.removeItem('token')
