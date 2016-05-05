@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Helmet from 'react-helmet'
-import Header from 'containers/Header/Header'
+import Navbar from '../Navbar/Navbar';
 import config from '../../config'
 
 
@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <div className={styles.app}>
         <Helmet {...config.app.head} />
-        <Header />
+        <Navbar />
         {this.props.children}
       </div>
     );

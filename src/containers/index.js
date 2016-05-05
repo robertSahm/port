@@ -4,5 +4,5 @@ export RequireAuth from './Auth/RequireAuth';
 export Signin from './Auth/Signin';
 export Signout from './Auth/Signout';
 export Signup from './Auth/Signup';
-export Header from './Header/Header';
+export Navbar from './Navbar/Navbar';
 export NotFound from './NotFound/NotFound';
