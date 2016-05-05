@@ -3,11 +3,14 @@ import { Link } from 'react-router'
 
 class Hero extends Component {
   render() {
+    const styles = require('./Hero.scss')
+
     return (
-      <div className="hero">
-        <h1>Hello, world!</h1>
-        <p className="lead">This is the Hero</p>
-        <p><Link className="btn btn-primary btn-lg" to="/" role="button">Learn more</Link></p>
+      <div className={styles.hero}>
+        <h1>Robert Sahm</h1>
+        <h1>New York City</h1>
+        <h1>Web Development</h1>
+        <h1>Design</h1>
       </div>
     )
   }
