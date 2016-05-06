@@ -1,5 +1,3 @@
-@import '../../theme/variables.scss';
-
 .app {
   background-image: url('./bg-tan.jpg');
   background-repeat: repeat;
@@ -7,8 +5,4 @@
   min-width: 100%;
   min-height: 100%;
   padding: 0 2%;
-}
-
-h1 {
-  font-family: $font-family-serif;
 }

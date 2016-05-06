@@ -1,6 +1,37 @@
+@import '../../theme/variables.scss';
+
 .hero {
   h1 {
-    font-size: 7.2rem;
+    font-size: 7rem;
     font-weight: 700;
+    // border: 1px solid red;
+  }
+}
+
+.fire {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('./fire-1.svg') no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: 102% 50%;
+  background-size: 65% auto;
+
+  @media (min-width: $screen-xs) {
+    background-position: 110% 80%;
+    background-size: 95% auto;
+  }
+  @media (min-width: $screen-sm) {
+    background-position: 110% 95%;
+    background-size: 95% auto;
+  }
+  @media (min-width: $screen-md) {
+    background-position: 102% 50%;
+    background-size: 65% auto;
+  }
+  @media (min-width: $screen-lg) {
+    background-position: 102% 50%;
+    background-size: 58% auto;
   }
 }
