@@ -4,28 +4,30 @@ import { Link } from 'react-router'
 
 class Navbar extends Component {
   renderLinks() {
+    const styles = require('./Navbar.scss')
+
     if (this.props.authenticated) {
       // sign a link to sign out
       return [
-        <li className="nav-item">
+        <li className={styles.nav_li}>
           <Link className="nav-link" to="/signout">Sign Out</Link>
         </li>
       ]
     }
     else {
       return [
-        <li className="nav-item">
+        <div className={styles.nav_li} key={1}>
           <Link className="nav-link" to="/">Home</Link>
-        </li>,
-        <li className="nav-item">
+        </div>,
+        <div className={styles.nav_li} key={2}>
           <Link className="nav-link" to="/">Work</Link>
-        </li>,
-        <li className="nav-item">
+        </div>,
+        <div className={styles.nav_li} key={3}>
           <Link className="nav-link" to="/">About</Link>
-        </li>,
-        <li className="nav-item">
+        </div>,
+        <div className={styles.nav_li} key={4}>
           <Link className="nav-link" to="/">Contact</Link>
-        </li>
+        </div>
         // <li className="nav-item" key={1}>
         //   <Link className="nav-link" to="/signin">Sign In</Link>
         // </li>,
@@ -37,11 +39,11 @@ class Navbar extends Component {
   }
 
   render() {
+    const styles = require('./Navbar.scss')
+
     return (
-      <nav className="navbar">
-        <ul className="nav navbar-nav">
-          {this.renderLinks()}
-        </ul>
+      <nav className={styles.nav_wrap}>
+        {this.renderLinks()}
       </nav>
     )
   }

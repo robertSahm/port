@@ -1,0 +1,19 @@
+@import '../../theme/variables.scss';
+
+.nav_wrap {
+  display: flex;
+  height: 55px;
+  flex-flow: row nowrap;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  @extend .margin-left;
+  // justify-content: space-around;
+  // align-items: stretch;
+
+  .nav_li {
+    flex: 0 0 70px;
+    text-align: left;
+  }
+}
