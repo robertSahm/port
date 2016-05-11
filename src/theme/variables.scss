@@ -40,6 +40,13 @@ $screen-lg: 1440px;
 
 $xs-up: $screen-xs;
 
-.margin-left {
-  margin-left: 50px;
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }

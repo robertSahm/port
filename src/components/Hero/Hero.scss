@@ -1,29 +1,43 @@
 @import '../../theme/variables.scss';
+// background: url('./fire-1.svg') no-repeat;
 
 .hero_wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: visible;
 
 }
 
-.header_text {
+.hero_text_wrap {
+  position: relative;
+  top: 0;
+  padding-left: 3%;
+  width: 100%;
+  height: 100%;
 
   h1 {
     font-size: 7rem;
     font-weight: 700;
-    display: flex;
   }
 }
 
 .fireWrap {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap-reverse;
-  flex: 1 100%;
+  position: absolute;
+	top: 0;
+	left: 4px;
+	width: 100%;
+	height: 100%;
 
-  .fire {
-    height: 400px;
-    width: 500px;
-    background: url('./fire-1.svg') no-repeat;
-
+  .fireColor {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-40%);
+    min-width: 45%;
+    min-height: 100%;
 
     @media (min-width: $screen-xs) {
     }
@@ -34,33 +48,13 @@
     @media (min-width: $screen-lg) {
     }
   }
-}
 
-// .fire {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   background: url('./fire-1.svg') no-repeat;
-//   height: 100%;
-//   width: 100%;
-//   background-position: 102% 50%;
-//   background-size: 65% auto;
-//   border: 1px solid red;
-//
-//   @media (min-width: $screen-xs) {
-//     background-position: 110% 80%;
-//     background-size: 95% auto;
-//   }
-//   @media (min-width: $screen-sm) {
-//     background-position: 110% 95%;
-//     background-size: 95% auto;
-//   }
-//   @media (min-width: $screen-md) {
-//     background-position: 102% 50%;
-//     background-size: 65% auto;
-//   }
-//   @media (min-width: $screen-lg) {
-//     background-position: 102% 50%;
-//     background-size: 58% auto;
-//   }
-// }
+  .fireLines {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-40%);
+    min-width: 45%;
+    min-height: 100%;
+  }
+}
