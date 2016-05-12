@@ -8,20 +8,6 @@
   width: 100%;
   height: 100%;
   overflow-y: visible;
-
-}
-
-.hero_text_wrap {
-  position: relative;
-  top: 0;
-  padding-left: 3%;
-  width: 100%;
-  height: 100%;
-
-  h1 {
-    font-size: 7rem;
-    font-weight: 700;
-  }
 }
 
 .fireWrap {
@@ -30,13 +16,14 @@
 	left: 4px;
 	width: 100%;
 	height: 100%;
+  z-index: 100;
 
-  .fireColor {
+  .fireColor, .fireLines {
     position: absolute;
-    top: 50%;
+    top: 100%;
     right: 0;
-    transform: translateY(-40%);
-    min-width: 45%;
+    width: 55%;
+    min-width: 295px;
     min-height: 100%;
 
     @media (min-width: $screen-xs) {
@@ -50,11 +37,44 @@
   }
 
   .fireLines {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-40%);
-    min-width: 45%;
-    min-height: 100%;
+    margin-top: -0.5%;
+    right: -.2%;
+    width: 56.5%;
+  }
+}
+
+.hero_text_wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 3%;
+  padding-top: 1%;
+
+  h1 {
+    font-weight: 600;
+    line-height: .95em;
+
+    &.text_pink {
+      color: $pink;
+    }
+
+    &.text_red {
+      color: $red;
+    }
+
+    &.text_yellow {
+      color: $yellow;
+    }
+
+    &.text_black {
+      color: $black;
+    }
+  }
+
+  h6 {
+    margin-top: 7%;
+    font-weight: 700;
+    color: rgba(8, 20, 42, .6)
   }
 }

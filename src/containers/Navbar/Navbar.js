@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router'
+import ReactFitText from 'react-fittext'
 
 class Navbar extends Component {
   renderLinks() {
@@ -16,24 +17,27 @@ class Navbar extends Component {
     }
     else {
       return [
-        <div className={styles.nav_li} key={1}>
-          <Link className="nav-link" to="/">Home</Link>
-        </div>,
-        <div className={styles.nav_li} key={2}>
-          <Link className="nav-link" to="/">Work</Link>
-        </div>,
-        <div className={styles.nav_li} key={3}>
-          <Link className="nav-link" to="/">About</Link>
-        </div>,
-        <div className={styles.nav_li} key={4}>
-          <Link className="nav-link" to="/">Contact</Link>
-        </div>
-        // <li className="nav-item" key={1}>
-        //   <Link className="nav-link" to="/signin">Sign In</Link>
-        // </li>,
-        // <li className="nav-item" key={2}>
-        //   <Link className="nav-link" to="/signup">Sign Up</Link>
-        // </li>
+          <div className={styles.nav_li} key={1}>
+            <Link className="nav-link" to="/">
+              Home
+            </Link>
+          </div>,
+          <div className={styles.nav_li} key={2}>
+            <Link className="nav-link" to="/">Work</Link>
+          </div>,
+          <div className={styles.nav_li} key={3}>
+            <Link className="nav-link" to="/">About</Link>
+          </div>,
+          <div className={styles.nav_li} key={4}>
+            <Link className="nav-link" to="/">Contact</Link>
+          </div>
+          // {/*<li className="nav-item" key={1}>
+          //   <Link className="nav-link" to="/signin">Sign In</Link>
+          //   </li>,
+          //   <li className="nav-item" key={2}>
+          //   <Link className="nav-link" to="/signup">Sign Up</Link>
+          // </li>*/}
+
       ]
     }
   }

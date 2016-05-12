@@ -13,7 +13,16 @@
   // align-items: stretch;
 
   .nav_li {
-    flex: 0 0 70px;
+    flex: 0 0 100px;
     text-align: left;
+    font-size: 1.2em;
+
+    a {
+      color: $black;
+
+      &:hover {
+        color: $red;
+      }
+    }
   }
 }

@@ -18,7 +18,7 @@ $brand-danger:          #d9534f !default;
 
 $black:                 rgba(8, 20, 42, 1);
 $pink:                  rgba(239, 91, 161, 1);
-$red:                   rgba(241, 92, 42, 1);
+$red:                rgba(241, 92, 42, 1);
 $yellow:                rgba(255, 189, 31, 1);
 $white:                 rgba(246, 240, 228, 1);
 
@@ -49,4 +49,20 @@ html, body {
   height: 100%;
   width: 100%;
   overflow-x: hidden;
+}
+
+.text_pink {
+  color: $pink;
+}
+
+.text_red {
+  color: $red;
+}
+
+.text_yellow {
+  color: $yellow;
+}
+
+.text_black {
+  color: $black;
 }
