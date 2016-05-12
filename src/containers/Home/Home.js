@@ -9,7 +9,9 @@ class Home extends Component {
     return (
       <div className={styles.content}>
         <Helmet title="Home"/>
-        <Hero />
+        <div className={styles.hero_wrap}>
+          <Hero />
+        </div>
       </div>
     );
   }

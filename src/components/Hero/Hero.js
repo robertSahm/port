@@ -5,6 +5,18 @@ import MtSvgLines from 'react-mt-svg-lines'
 import fireColor from './fireColor.svg'
 
 class Hero extends Component {
+  constructor( props ) {
+    super( props )
+
+    this.state = {
+      triggerAnim:   true,
+      trigger: '1'
+      // triggerSigAnim:     true,
+      // triggerChartAnim:   true,
+      // triggerSpinnerAnim: true
+    }
+  }
+
   render() {
     const styles = require('./Hero.scss')
     const fireBig = require('./fireColor.svg')
@@ -12,16 +24,24 @@ class Hero extends Component {
     const minFontSize = 27
     const maxFontSize = 95
 
+    const {
+      triggerAnim,
+      trigger
+      // triggerSigAnim,
+      // triggerChartAnim,
+      // triggerSpinnerAnim
+    } = this.state;
+
     return (
-      <div className={styles.hero_wrap}>
+      <div className={styles.hero_inner}>
 
         <div className={styles.fireWrap}>
           <img src={fireColor} className={styles.fireColor}/>
 
           <MtSvgLines
             className={styles.fireLines}
-            animate={ true }
-            duration={ 2000 } >
+            animate={triggerAnim}
+            duration={2000} >
 
             <svg viewBox="0 0 690 591" version="1.1" >
               <title>fireLines</title>
@@ -44,6 +64,8 @@ class Hero extends Component {
           </MtSvgLines>
         </div>
 
+        <div className={styles.click2animate} onClick={this.animateClick}></div>
+
         <div className={styles.hero_text_wrap}>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
             <h1 className={styles.text_pink}>Robert Sahm</h1>
@@ -58,12 +80,22 @@ class Hero extends Component {
             <h1 className={styles.text_black}>Design</h1>
           </ReactFitText>
           <ReactFitText compressor={4.0} className={styles.tagline} minFontSize={17} maxFontSize={30}>
-            <h6>Let's make something beautiful.</h6>
+            <h6>Everything in the correct box</h6>
+            {/*<h6>Let's make something beautiful.</h6>*/}
           </ReactFitText>
         </div>
 
       </div>
     )
+  }
+
+  animateClick = ( e ) => {
+    e.preventDefault();
+    const triggerKey = e.target.triggerAnim   // determine which clicked from its data attr
+    const triggerVal = e.target + 1           // generate a unique string to pass to 'animate'
+    console.log(e.target)
+
+    this.setState( { [ triggerKey ]: triggerVal } );
   }
 }
 
