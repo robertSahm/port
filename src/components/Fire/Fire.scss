@@ -1,0 +1,33 @@
+@import '../../theme/variables.scss';
+
+.fire_color, .fire_lines {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  min-width: 295px;
+  min-height: 100%;
+
+  @media (min-width: $screen-xs) {
+  }
+  @media (min-width: $screen-sm) {
+  }
+  @media (min-width: $screen-md) {
+  }
+  @media (min-width: $screen-lg) {
+  }
+}
+
+.fire-lines {
+  margin-top: -0.5%;
+  right: -.2%;
+  width: 56.5%;
+  border: 2px solid red;
+}
+
+.click2animate {
+  z-index: 999;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}

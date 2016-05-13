@@ -108,6 +108,7 @@
     "piping": "^0.3.0",
     "pretty-error": "^1.2.0",
     "react": "^0.14.2",
+    "react-addons-css-transition-group": "^15.0.2",
     "react-bootstrap": "^0.28.1",
     "react-dom": "^0.14.1",
     "react-fittext": "^0.1.1",

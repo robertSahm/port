@@ -1,43 +1,18 @@
 @import '../../theme/variables.scss';
-// background: url('./fire-1.svg') no-repeat;
-
 
 .hero_inner {
   position: relative;
   overflow-y: visible;
 }
 
-.fireWrap {
-  position: relative;
+.fire_wrap {
+  position: absolute;
 	top: 0;
 	left: 4px;
 	min-width: 100%;
 	min-height: 100%;
   z-index: 100;
 
-  .fireColor, .fireLines {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 55%;
-    min-width: 295px;
-    min-height: 100%;
-
-    @media (min-width: $screen-xs) {
-    }
-    @media (min-width: $screen-sm) {
-    }
-    @media (min-width: $screen-md) {
-    }
-    @media (min-width: $screen-lg) {
-    }
-  }
-
-  .fireLines {
-    margin-top: -0.5%;
-    right: -.2%;
-    width: 56.5%;
-  }
 }
 
 .hero_text_wrap {
@@ -73,14 +48,4 @@
     font-weight: 700;
     color: rgba(8, 20, 42, .6)
   }
-}
-
-.click2animate {
-  z-index: 999;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  border: 3px solid red;
 }
