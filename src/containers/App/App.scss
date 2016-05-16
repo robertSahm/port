@@ -1,10 +1,7 @@
 .app {
-  position: absolute;
-  // top: 0;
-  // bottom: 0;
-  // height: 100%;
-  // width: 100%;
-  // min-height: 100%;
-  // min-width: 100%;
-  border: 8px solid blue;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: flex-start; /* align items in Main Axis */
+  // align-items: stretch; /* align items in Cross Axis */
+  // align-content: stretch; /* Extra space in Cross Axis */
 }

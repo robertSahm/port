@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet';
 import Hero from '../../components/Hero/Hero';
+import JobList from '../../components/JobList/JobList';
 
 class Home extends Component {
   render() {
@@ -12,6 +13,10 @@ class Home extends Component {
         <div className={styles.hero_wrap}>
           <Hero />
         </div>
+        
+        <JobList />
+
+        
       </div>
     );
   }

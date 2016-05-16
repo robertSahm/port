@@ -31,11 +31,15 @@ class Hero extends Component {
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
             <h1 className={styles.text_black}>Design</h1>
           </ReactFitText>
-          <ReactFitText compressor={4.0} className={styles.tagline} minFontSize={17} maxFontSize={30}>
-            <h6>Everything in the correct box</h6>
-            {/*<h6>Let's make something beautiful.</h6>*/}
+          <ReactFitText 
+            compressor={5} 
+            minFontSize={18} 
+            // maxFontSize={26}
+            className={styles.tagline}>
+            <p>Let's make something beautiful.</p>
           </ReactFitText>
         </div>
+
       </div>
     )
   }
