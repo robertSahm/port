@@ -22,7 +22,7 @@
     "default-case": 0,
     "no-else-return": 0,
     "func-names": 0,
-
+    "id-length": [0, "never"]
   },
   "plugins": [
     "react", "import"

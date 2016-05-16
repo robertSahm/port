@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 import { Link } from 'react-router'
 import ReactFitText from 'react-fittext'
 import styles from './Hero.scss'
-import Fire from '../Fire/Fire'
+import FireHome from '../FireHome/FireHome'
 
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
@@ -16,7 +16,7 @@ class Hero extends Component {
     return (
       <div className={styles.hero_inner}>
 
-        <Fire className={styles.fire_wrap} />
+        <FireHome className={styles.fire_wrap} />
 
         <div className={styles.hero_text_wrap}>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
