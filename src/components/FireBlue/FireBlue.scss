@@ -1,12 +1,20 @@
 .fireblue_wrap {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: none;
 
-
-
+  .fire_blue_lines, .fire_blue,  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+  }
 }
 
 .click2animate {
   z-index: 999;
-  // position: absolute;
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
 }

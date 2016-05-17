@@ -1,18 +1,70 @@
 @import '../../theme/variables.scss';
 
 .joblist_wrap {
-
-  padding-top: 5%;
-  padding-left: 3%;
+  position: relative;
+  padding-top: 4%;
 
   .joblist_header {
+    position: relative;
+    top: 0;
+    left: 0;
     color: $yellow;
+    z-index: 100;
+    display: block;
+    padding-top: 3%;
+    padding-left: 3%;
   }
 }
 
-.dummy_text {
-  max-width: 50%;
-  margin: 0 auto;
-  color: transparent;
-  // display: none;
+.divider_line {
+  width: 40%;
+  height: 10px;
+}
+
+.projects_wrap {
+  padding: 4% 0;
+} 
+
+.lucera_project_wrap, .alpine_project_wrap, .carol_project_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+
+
+  .project_home_img, .project_description {
+    max-width: 600px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    padding: 1% 3%;
+
+    img {
+      width: 100%;
+      padding-top: 4%;
+    }
+
+    h3 {
+    }
+
+    h5 {
+      font-weight: bold;
+      line-height: 1.5em;
+      margin-top: -8px;
+    }
+
+    ul {
+      list-style: bullet;
+      padding-left: 15px;
+
+      li {
+        padding-bottom: 5px;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.alpine_project_wrap {
+  padding: 3% 0;
 }
