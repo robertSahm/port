@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 import styles from './JobList.scss'
 import FireBlue from '../FireBlue/FireBlue'
 import divider_line from './divider_line.png';
-import lucera_home from './lucera_ss_home.png';
+import lucera_home from './lucera_home.svg';
 import alpine_home from './alpine_home.png';
 import carol_home from './carol_home.png';
 
@@ -13,8 +13,10 @@ class JobList extends Component {
 
     return (
       <div className={styles.joblist_wrap}>
+        {/* 
         <FireBlue />
-        <img src={divider_line} className={styles.divider_line}/>
+        <img src={divider_line} className={styles.divider_line}/> 
+        */}
         <h2 className={styles.joblist_header}>Selected Works</h2>
 
         <div className={styles.projects_wrap}>

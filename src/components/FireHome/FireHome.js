@@ -18,7 +18,7 @@ class Fire extends Component {
       <div className={styles.click2animate}
         href="#"
         data-trigger={triggerProp}
-        onClick={this._handleAnimateClick} >
+        onClick={this._handleAnimateClick}>
       </div>
     )
   }
@@ -36,14 +36,17 @@ class Fire extends Component {
 
     return (
       <div>
+        
         <img src={fireColor} className={styles.fire_color}/>
+
         <MtSvgLines
           className={styles.fire_lines}
           animate={triggerLineAnim}
-          duration={2000} >
+          duration={7000}
+          stagger={50}>
 
           {this._renderTrigger('triggerLineAnim')}
-          <svg viewBox="0 0 690 591" version="1.1" >
+          <svg viewBox="0 0 690 591" version="1.1">
             <title>fireLines</title>
             <g id="SVG-Chopper" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" opacity="0.4">
               <g id="-" transform="translate(-235.000000, -197.000000)" stroke="#08142a" strokeWidth="2">

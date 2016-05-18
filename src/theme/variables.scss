@@ -22,9 +22,9 @@ $red:                   rgba(241, 92, 42, 1);
 $yellow:                rgba(255, 189, 31, 1);
 $white:                 rgba(246, 240, 228, 1);
 
-// $font-family-serif:    "Sorts Mill Goudy", Times, serif !default;
-// $font-family-serif:    "Droid Serif", "Times New Roman", Times, serif !default;
-$font-family-serif:       "Libre Baskerville", Times, serif !default;
+// $font-family-serif:  "Sorts Mill Goudy", Times, serif !default;
+$font-family-serif:     "Droid Serif", "Times New Roman", Times, serif !default;
+// $font-family-serif:  "Libre Baskerville", Times, serif !default;
 
 $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 // $font-family-sans-serif:  "Droid-Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
@@ -34,6 +34,7 @@ $font-family-base:        $font-family-sans-serif !default;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
+  font-weight: 700;
 }
 
 p {

@@ -32,7 +32,7 @@ class Hero extends Component {
             <h1 className={styles.text_black}>Design</h1>
           </ReactFitText>
           <ReactFitText 
-            compressor={5} 
+            compressor={5.5} 
             minFontSize={18} 
             // maxFontSize={26}
             className={styles.tagline}>

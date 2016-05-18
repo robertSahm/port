@@ -23,7 +23,7 @@
   padding-top: 1%;
 
   h1 {
-    line-height: .95em;
+    line-height: .7em;
 
     &.text_pink {
       color: $pink;
@@ -45,6 +45,8 @@
   p {
     margin-top: 4%;
     font-weight: 400;
-    color: rgba($black, .7);
+    color: rgba($black, .4);
+    font-style: italic;
+    font-family: $font-family-serif;
   }
 }
