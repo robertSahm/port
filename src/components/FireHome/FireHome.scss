@@ -25,6 +25,20 @@
   // border: 2px solid red;
 }
 
+.fire_color {
+  opacity: 0; 
+  transition: opacity 1.0s;
+}
+
+.fire_color_loaded {
+  opacity: 1;
+}
+
+:global {
+  .some-class {}
+  .another-class {}
+}
+
 .click2animate {
   z-index: 999;
   position: absolute;

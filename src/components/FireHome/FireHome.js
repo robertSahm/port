@@ -3,6 +3,8 @@ import MtSvgLines from 'react-mt-svg-lines'
 import fireColor from './fireColor.svg'
 import styles from './FireHome.scss'
 
+var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+
 class Fire extends Component {
   constructor( props ) {
     super( props )
@@ -37,7 +39,7 @@ class Fire extends Component {
     return (
       <div>
         
-        <img src={fireColor} className={styles.fire_color}/>
+        <img src={fireColor} className={styles.fire_color} />
 
         <MtSvgLines
           className={styles.fire_lines}
