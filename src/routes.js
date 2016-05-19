@@ -9,6 +9,8 @@ import {
     App,
     Home,
     Work,
+    Contact,
+    About,
     Lucera,
     Alpine,
     Carol,
@@ -27,8 +29,8 @@ export default () => {
 
       { /* Routes */ }
       <Route path="work" component={Work} />
-      <Route path="about" component={Work} />
-      <Route path="contact" component={Work} />
+      <Route path="about" component={About} />
+      <Route path="contact" component={Contact} />
       <Route path="work/lucera" component={Lucera} />
       <Route path="work/alpine" component={Alpine} />
       <Route path="work/carol" component={Carol} />
