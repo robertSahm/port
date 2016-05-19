@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Helmet from 'react-helmet'
-import Navbar from '../Navbar/Navbar';
 import config from '../../config'
+import styles from './App.scss'
 
 
 export default class App extends Component {
@@ -10,12 +10,9 @@ export default class App extends Component {
   };
 
   render() {
-    const styles = require('./App.scss');
-
     return (
       <div className={styles.app}>
         <Helmet {...config.app.head} />
-        <Navbar />
         {this.props.children}
       </div>
     );

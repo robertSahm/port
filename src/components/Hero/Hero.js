@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 import { Link } from 'react-router'
+import Navbar from '../../components/Navbar/Navbar';
 import ReactFitText from 'react-fittext'
 import styles from './Hero.scss'
 import FireHome from '../FireHome/FireHome'
@@ -36,7 +37,7 @@ class Hero extends Component {
             minFontSize={18} 
             // maxFontSize={26}
             className={styles.tagline}>
-            <p>Let's make something beautiful.</p>
+            <Navbar />
           </ReactFitText>
         </div>
 

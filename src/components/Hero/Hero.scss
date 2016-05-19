@@ -3,6 +3,7 @@
 .hero_inner {
   position: relative;
   overflow-y: visible;
+  background-color: transparent;
 }
 
 .fire_wrap {
@@ -12,7 +13,6 @@
 	min-width: 100%;
 	min-height: 100%;
   z-index: 100;
-
 }
 
 .hero_text_wrap {
@@ -23,7 +23,7 @@
   padding-top: 1%;
 
   h1 {
-    line-height: .7em;
+    line-height: 1em;
 
     &.text_pink {
       color: $pink;

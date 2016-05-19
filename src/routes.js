@@ -8,6 +8,10 @@ import RequireAuth from 'containers/Auth/RequireAuth'
 import {
     App,
     Home,
+    Work,
+    Lucera,
+    Alpine,
+    Carol,
     NotFound
   } from 'containers';
 
@@ -17,9 +21,19 @@ export default () => {
    */
   return (
     <Route path="/" component={App}>
+
       { /* Home (main) route */ }
-      <IndexRoute component={Home}/>
+      <IndexRoute component={Home} />
+
       { /* Routes */ }
+      <Route path="work" component={Work} />
+      <Route path="about" component={Work} />
+      <Route path="contact" component={Work} />
+      <Route path="work/lucera" component={Lucera} />
+      <Route path="work/alpine" component={Alpine} />
+      <Route path="work/carol" component={Carol} />
+
+
       <Route path="signin" component={Signin} />
       <Route path="signout" component={Signout} />
       <Route path="signup" component={Signup} />
