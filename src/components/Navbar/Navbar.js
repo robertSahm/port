@@ -12,13 +12,13 @@ class Navbar extends Component {
           <Link className="nav-link" to="/">Home</Link>
         </div>
         <div className={styles.nav_item} key={2}>
-          <Link className="nav-link" to="/work">Work</Link>
+          <Link className="nav-link" to="work">Work</Link>
         </div>
         <div className={styles.nav_item} key={3}>
-          <Link className="nav-link" to="/about">About</Link>
+          <Link className="nav-link" to="about">About</Link>
         </div>
         <div className={styles.nav_item} key={4}>
-          <Link className="nav-link" to="/contact">Contact</Link>
+          <Link className="nav-link" to="contact">Contact</Link>
         </div>
       </nav>
     )

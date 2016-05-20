@@ -9,3 +9,5 @@ export Work from './Work/Work';
 export Lucera from './Lucera/Lucera';
 export Alpine from './Alpine/Alpine';
 export Carol from './Carol/Carol';
+export About from './About/About';
+export Contact from './Contact/Contact';

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import Helmet from 'react-helmet'
 import styles from './Work.scss'
 import Hero from '../../components/Hero/Hero'
 import WorkItem from '../../components/WorkItem/WorkItem'
@@ -9,11 +10,10 @@ import alpine_home from './alpine_home.png'
 import carol_home from './carol_home.png'
 
 class Work extends Component {
-
   render() {
-
     return (
       <div className={styles.work_wrap}>
+        <Helmet title="Work"/>
         <Hero />
         <div className={styles.work_list_wrap}>
           <h2>Selected Works</h2>
