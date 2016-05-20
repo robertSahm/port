@@ -14,9 +14,12 @@ class Work extends Component {
     return (
       <div className={styles.work_wrap}>
         <Helmet title="Work"/>
-        <Hero />
+        <Hero 
+          line_1="Robert Sahm"
+          line_4="Selected Works"
+        />
+
         <div className={styles.work_list_wrap}>
-          <h2>Selected Works</h2>
 
           <WorkItem 
             company="Lucera Financial Infrastructures" 

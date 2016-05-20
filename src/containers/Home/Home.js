@@ -9,10 +9,15 @@ class Home extends Component {
       <div className={styles.content}>
         <Helmet title="Home"/>
         <div className={styles.hero_wrap}>
-          <Hero />
+          <Hero 
+            line_1="Robert Sahm"
+            line_2="New York City"
+            line_3="Web Development"
+            line_4="Design"
+          />
         </div>
       </div>
-    );
+    )
   }
 }
 

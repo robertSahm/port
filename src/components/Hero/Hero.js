@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import ReactDom from 'react-dom'
 import { Link } from 'react-router'
+import { connect } from 'react-redux'
 import Navbar from '../../components/Navbar/Navbar';
 import ReactFitText from 'react-fittext'
 import styles from './Hero.scss'
@@ -9,7 +10,26 @@ import FireHome from '../FireHome/FireHome'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 class Hero extends Component {
+  constructor( props ) {
+    super( props )
+
+    this.state = {
+      showFire: true
+    }
+  }
+
+  renderFire(props) {
+    console.log(this.props)
+    if ( this.props.showFire == true ) {
+      console.log('the if worked!')
+      return (
+         <FireHome className={styles.fire_wrap} />
+      )
+    }
+  }
+  
   render() {
+    const { showFire } = this.state;
     const comp = 1.75
     const minFontSize = 27
     const maxFontSize = 95
@@ -17,28 +37,25 @@ class Hero extends Component {
     return (
       <div className={styles.hero_inner}>
 
-        <FireHome className={styles.fire_wrap} />
+        {this.renderFire()}
 
         <div className={styles.hero_text_wrap}>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_pink}>Robert Sahm</h1>
+            <h1 className={styles.text_pink}>{this.props.line_1}</h1>
           </ReactFitText>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_red}>New York City</h1>
+            <h1 className={styles.text_red}>{this.props.line_2}</h1>
           </ReactFitText>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_yellow}>Web Development</h1>
+            <h1 className={styles.text_yellow}>{this.props.line_3}</h1>
           </ReactFitText>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_black}>Design</h1>
+            <h1 className={styles.text_black}>{this.props.line_4}</h1>
           </ReactFitText>
-          <ReactFitText 
-            compressor={5.5} 
-            minFontSize={18} 
-            // maxFontSize={26}
-            className={styles.tagline}>
+          <ReactFitText compressor={5.5} minFontSize={18} className={styles.tagline}>
             <Navbar />
           </ReactFitText>
+
         </div>
 
       </div>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import styles from './Contact.scss'
+import Hero from '../../components/Hero/Hero'
 
 class Contact extends Component {
   render() {
@@ -8,10 +9,15 @@ class Contact extends Component {
       <div className={styles.content}>
         <Helmet title="Contact"/>
         <div className={styles.contact_wrap}>
-          <h1>Contact</h1>
-        </div>
+          <Hero 
+            line_1="Please"
+            line_2="Feel Free To"
+            line_3="Contact"
+            line_4="Robert Sahm"
+          />
+          </div>
       </div>
-    );
+    )
   }
 }
 

@@ -38,9 +38,7 @@ class Fire extends Component {
 
     return (
       <div>
-        
         <img src={fireColor} className={styles.fire_color} />
-
         <MtSvgLines
           className={styles.fire_lines}
           animate={triggerLineAnim}
