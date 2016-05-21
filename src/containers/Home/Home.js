@@ -14,6 +14,7 @@ class Home extends Component {
             line_2="New York City"
             line_3="Web Development"
             line_4="Design"
+            
           />
         </div>
       </div>

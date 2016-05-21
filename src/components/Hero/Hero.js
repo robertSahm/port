@@ -10,35 +10,37 @@ import FireHome from '../FireHome/FireHome'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 class Hero extends Component {
+
   constructor( props ) {
     super( props )
 
-    this.state = {
-      showFire: true
+    this.state = { 
+      graphic: true
     }
   }
 
-  renderFire(props) {
-    console.log(this.props)
-    if ( this.props.showFire == true ) {
-      console.log('the if worked!')
-      return (
-         <FireHome className={styles.fire_wrap} />
-      )
-    }
-  }
+  // renderGraphic(props) {
+  //   if (this.state.waiting == false) {
+  //     return (
+  //       <FireHome />
+  //     )
+  //   }
+  //   if (this.state.waiting == true) {
+  //     return (
+  //       <div />
+  //     )
+  //   }
+  // }
   
   render() {
-    const { showFire } = this.state;
+    const { graphic } = this.state;
     const comp = 1.75
     const minFontSize = 27
     const maxFontSize = 95
-
+   
     return (
       <div className={styles.hero_inner}>
-
-        {this.renderFire()}
-
+        <FireHome />
         <div className={styles.hero_text_wrap}>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
             <h1 className={styles.text_pink}>{this.props.line_1}</h1>
@@ -55,7 +57,6 @@ class Hero extends Component {
           <ReactFitText compressor={5.5} minFontSize={18} className={styles.tagline}>
             <Navbar />
           </ReactFitText>
-
         </div>
 
       </div>

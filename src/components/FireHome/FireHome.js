@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import MtSvgLines from 'react-mt-svg-lines'
 import fireColor from './fireColor.svg'
 import styles from './FireHome.scss'
@@ -11,41 +12,72 @@ class Fire extends Component {
 
     this.state = {
       triggerLineAnim: true,
-      showColor: false
+      triggerColorAnim: true,
+      key: 1
     }
   }
-
-  _renderTrigger(triggerProp) {
+  // componentWillReceiveProps(nextProps) {
+  //   console.log('componentWillReceiveProps called')
+  //   const self = this
+  //   setTimeout(() => {
+  //     self.setState({ waiting: false }) 
+  //   }, 1500)
+  // }
+  renderTrigger(triggerProp) {
     return (
-      <div className={styles.click2animate}
+      <div 
+        className={styles.click2animate}
         href="#"
         data-trigger={triggerProp}
-        onClick={this._handleAnimateClick}>
+        onClick={this.handleAnimateClick}>
       </div>
     )
   }
 
-  _handleAnimateClick = ( e ) => {
-    e.preventDefault();
-    const triggerKey = e.target.dataset.trigger;
-    const triggerVal = String( Date.now() );
-    this.setState( { [ triggerKey ]: triggerVal } );
+  renderGraphic(props) {
+    return (
+      <ReactCSSTransitionGroup 
+        transitionAppear={true} 
+        transitionAppearTimeout={2000} 
+        transitionEnterTimeout={2000} 
+        transitionLeaveTimeout={2000} 
+        transitionName={styles}
+      >
+        <img src={fireColor} className={styles.fire_color} />
+      </ReactCSSTransitionGroup>
+    )
   }
+  
+  handleAnimateClick = ( e ) => {
+    e.preventDefault()
+    const triggerKey = e.target.dataset.trigger
+    const triggerVal = String(Date.now())
 
+    this.setState({ 
+      [ triggerKey ]: triggerVal,
+      triggerColorAnim: triggerVal
+    }, console.log('click set triggerColorAnim to: ' + this.state.triggerColorAnim))
+  }
+  
   render() {
-    const { triggerLineAnim, showColor } = this.state;
-    const fireBig = require('./fireColor.svg')
+    const {
+      triggerLineAnim, 
+      triggerColorAnim 
+    } = this.state
+    console.log('in render its this: ' + this.state.triggerColorAnim)
 
     return (
       <div>
-        <img src={fireColor} className={styles.fire_color} />
+
+        {this.renderGraphic(triggerColorAnim)}
+
         <MtSvgLines
           className={styles.fire_lines}
           animate={triggerLineAnim}
-          duration={7000}
+          duration={4000}
           stagger={50}>
 
-          {this._renderTrigger('triggerLineAnim')}
+          {this.renderTrigger('triggerLineAnim')}
           <svg viewBox="0 0 690 591" version="1.1">
             <title>fireLines</title>
             <g id="SVG-Chopper" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" opacity="0.4">
@@ -70,5 +102,36 @@ class Fire extends Component {
   }
 }
 
+function mapStateToProps(state) {
+  return {
+ triggerColorAnim: state.triggerColorAnim
+  }
+}
 
-export default Fire
+export default connect(mapStateToProps)(Fire)
+
+
+
+// renderGraphic(props) {
+    
+//     if (this.state.waiting == true) {
+//       return ( 
+//         <div className='my-nice-tab-container'>
+//           <h1 className='loading-state'>Waiting</h1>
+//         </div>
+//       )
+//     } else if (this.state.waiting == false) {
+//       return (
+//         <ReactCSSTransitionGroup 
+//           transitionAppear={true} 
+//           transitionAppearTimeout={2000} 
+//           transitionEnterTimeout={2000} 
+//           transitionLeaveTimeout={2000} 
+//           transitionName={styles}
+//         >
+//           <img src={fireColor} className={styles.fire_color} />
+//         </ReactCSSTransitionGroup>
+//       )
+//     }
+//   }
+
