@@ -7,7 +7,6 @@ import {
   // SIGNUP_USER,
   FETCH_MESSAGE,
   FETCH_USERS,
-  CLICK_FIRE
 } from './types'
 
 export function authError(error) {
@@ -18,13 +17,6 @@ export function authError(error) {
 }
 
 const ROOT_URL = 'http://localhost:3090'
-
-export function clickFire() {
-  return {
-    type: CLICK_FIRE,
-    triggerColorAnim
-  }
-} 
 
 //
 // User Actions

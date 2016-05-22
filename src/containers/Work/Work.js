@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 import Helmet from 'react-helmet'
 import styles from './Work.scss'
 import Hero from '../../components/Hero/Hero'
@@ -15,13 +14,15 @@ class Work extends Component {
       <div className={styles.work_wrap}>
         <Helmet title="Work"/>
         <Hero 
-          line_1="Robert Sahm"
-          line_4="Selected Works"
+          line_1="Robert"
+          line_2="Sahm"
+          line_3="Selected"
+          line_4="Works"
         />
 
         <div className={styles.work_list_wrap}>
-
           <WorkItem 
+            className={styles.lucera_project_wrap}
             company="Lucera Financial Infrastructures" 
             jobTitle="Front End Engineer"
             blurb="This is where the little blurb goes describing the job in short."
@@ -29,6 +30,7 @@ class Work extends Component {
             linkTo={"work/lucera"}
           />
           <WorkItem 
+            className={styles.alpine_project_wrap}
             company="Alpine Labs" 
             jobTitle="Front End Engineer/Designer"
             blurb="This is where the little blurb goes describing the job in short."
@@ -36,13 +38,13 @@ class Work extends Component {
             linkTo={"work/alpine"}
           />
           <WorkItem 
+            className={styles.carol_project_wrap}
             company="Carol Beehler Graphic Design" 
             jobTitle="Front End Designer"
             blurb="This is where the little blurb goes describing the job in short."
             imgSrc={carol_home}
             linkTo={"work/carol"}
           />
-
         </div>
       </div>
     )

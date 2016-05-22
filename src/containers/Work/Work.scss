@@ -13,9 +13,22 @@
 
 .work_list_wrap {
   position: relative;
-  padding-top: 6%;
+  margin-top: 10%;
 
   h2 {
     padding-left: 3%;
   }
+}
+
+.lucera_project_wrap {
+  background: rgba($pink, .5) !important;
+  border: 20px solid red;
+}
+
+.alpine_project_wrap {
+  background-color: rgba($yellow, .5);
+}
+
+.carol_project_wrap {
+  background-color: rgba($red, .5);
 }

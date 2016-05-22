@@ -8,5 +8,3 @@ export const FETCH_MESSAGE = 'fetch_message'
 // Users
 export const FETCH_USERS = 'fetch_users'
 
-export const CLICK_FIRE = 'click_fire'
-

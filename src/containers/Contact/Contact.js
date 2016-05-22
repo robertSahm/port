@@ -11,8 +11,8 @@ class Contact extends Component {
         <div className={styles.contact_wrap}>
           <Hero 
             line_1="Please"
-            line_2="Feel Free To"
-            line_3="Contact"
+            line_2="Feel Free"
+            line_3="To Contact"
             line_4="Robert Sahm"
           />
           </div>

@@ -12,7 +12,8 @@ class About extends Component {
           <Hero
             line_1="Information"
             line_2="About"
-            line_4="Robert Sahm"
+            line_3="Robert"
+            line_4="Sahm"
           />
         </div>
         <h4>Bands played in: 20</h4>

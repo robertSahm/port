@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link, browserHistory } from 'react-router'
-import { connect } from 'react-redux'
 import styles from './WorkItem.scss'
 
 class WorkItem extends Component {
@@ -9,27 +8,26 @@ class WorkItem extends Component {
     return (
       <Link to={this.props.linkTo}>
         <div className={styles.work_item_wrap}>
+
           <div className={styles.work_item_description}>
-            <h3>{this.props.company}</h3>
-            <h5>{this.props.jobTitle}</h5>
-            <p>{this.props.blurb}</p>
+            <div className={styles.text_block}>
+              <h3>{this.props.company}</h3>
+              <h6>{this.props.jobTitle}</h6>
+              <p>{this.props.blurb}</p>
+            </div>
           </div>
+
           <div className={styles.work_item_img}>
             <img src={this.props.imgSrc} />
           </div>
+
         </div>
       </Link>
     )
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    authenticated: state.auth.authenticated
-  }
-}
-
-export default connect(mapStateToProps)(WorkItem)
+export default WorkItem
 
 {/* 
 

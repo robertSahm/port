@@ -18,19 +18,6 @@ class Hero extends Component {
       graphic: true
     }
   }
-
-  // renderGraphic(props) {
-  //   if (this.state.waiting == false) {
-  //     return (
-  //       <FireHome />
-  //     )
-  //   }
-  //   if (this.state.waiting == true) {
-  //     return (
-  //       <div />
-  //     )
-  //   }
-  // }
   
   render() {
     const { graphic } = this.state;
