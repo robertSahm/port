@@ -1,34 +1,93 @@
 @import '../../theme/variables.scss';
 
+
 .work_wrap {
   background: url('./bg-tan.jpg') repeat;
   width: 100%;
   height: 100%;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-start; /* align items in Main Axis */
-  // align-items: stretch; /* align items in Cross Axis */
-  // align-content: stretch; /* Extra space in Cross Axis */
+  border: 4px solid $red;
 }
 
 .work_list_wrap {
   position: relative;
-  margin-top: 10%;
+  margin: 5% 0 0 0;
+  max-width: 960px;
+}
 
-  h2 {
-    padding-left: 3%;
+// Flexbox stuff
+.lucera_project_wrap, .alpine_project_wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: flex-start;
+  
+  .work_item_img, .work_item_description {
+    // as flex item
+    flex: 1 1 auto;
+
+    // as flex container
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-flow: row nowrap;
+
+    // other
+    // min-height: 300px;
   }
 }
 
+// Text styling
+.text_block {
+  padding-left: 6%;
+
+  .company_title {
+    color: $black;
+  }
+
+  .job_title {
+    color: $black;
+  }
+
+  .blurb {
+    color: $black;
+  }
+}
+
+// Background colors and other specifics
 .lucera_project_wrap {
-  background: rgba($pink, .5) !important;
-  border: 20px solid red;
+  .work_item_img, .work_item_description {
+    background-color: rgba(239, 91, 161, .65);
+
+    img {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
 }
 
 .alpine_project_wrap {
-  background-color: rgba($yellow, .5);
+  .work_item_img, .work_item_description {
+    background-color: rgba(241, 92, 42, .65);
+
+    img {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
 }
 
-.carol_project_wrap {
-  background-color: rgba($red, .5);
+// Fancy Borders
+.work_item_img {
+  border-image: url("./border1.png");
+  border-image-slice: 1;
+  border-image-width: 3 3 0 0;
+  margin: 0;
+  border-style: solid;
+}
+
+.work_item_description {
+  border-image: url("./border1.png");
+  border-image-slice: 1;
+  border-image-width: 3 0 0 3;
+  margin: 0;
+  border-style: solid;
 }

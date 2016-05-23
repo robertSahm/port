@@ -42,7 +42,7 @@ class Fire extends Component {
     } = this.state
 
     return (
-      <div>
+      <div className={styles.fire_wrap}>
         <div className={styles.fire_color_revealer}>
           <MtSvgLines
             className={styles.fire_color}

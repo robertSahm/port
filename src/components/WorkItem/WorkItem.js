@@ -3,10 +3,9 @@ import { Link, browserHistory } from 'react-router'
 import styles from './WorkItem.scss'
 
 class WorkItem extends Component {
-
   render() {
     return (
-      <Link to={this.props.linkTo}>
+      <Link to={this.props.linkTo} className={this.props.color}>
         <div className={styles.work_item_wrap}>
 
           <div className={styles.work_item_description}>

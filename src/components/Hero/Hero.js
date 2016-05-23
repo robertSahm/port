@@ -21,31 +21,35 @@ class Hero extends Component {
   
   render() {
     const { graphic } = this.state;
-    const comp = 1.75
+    const comp = 1.95
     const minFontSize = 27
     const maxFontSize = 95
    
     return (
-      <div className={styles.hero_inner}>
-        <FireHome />
-        <div className={styles.hero_text_wrap}>
-          <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_pink}>{this.props.line_1}</h1>
-          </ReactFitText>
-          <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_red}>{this.props.line_2}</h1>
-          </ReactFitText>
-          <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_yellow}>{this.props.line_3}</h1>
-          </ReactFitText>
-          <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
-            <h1 className={styles.text_black}>{this.props.line_4}</h1>
-          </ReactFitText>
-          <ReactFitText compressor={5.5} minFontSize={18} className={styles.tagline}>
-            <Navbar />
-          </ReactFitText>
-        </div>
+      <div className={styles.hero_wrap}>
+        <div className={styles.hero_inner}>
 
+          <FireHome />
+
+          <div className={styles.hero_text_wrap}>
+            <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
+              <h1 className={styles.text_pink}>{this.props.line_1}</h1>
+            </ReactFitText>
+            <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
+              <h1 className={styles.text_red}>{this.props.line_2}</h1>
+            </ReactFitText>
+            <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
+              <h1 className={styles.text_yellow}>{this.props.line_3}</h1>
+            </ReactFitText>
+            <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
+              <h1 className={styles.text_black}>{this.props.line_4}</h1>
+            </ReactFitText>
+            <ReactFitText compressor={5.5} minFontSize={18} className={styles.tagline}>
+              <Navbar />
+            </ReactFitText>
+          </div>
+
+        </div>
       </div>
     )
   }

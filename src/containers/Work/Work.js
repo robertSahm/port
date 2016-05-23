@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import { Link, browserHistory } from 'react-router'
 import Helmet from 'react-helmet'
 import styles from './Work.scss'
 import Hero from '../../components/Hero/Hero'
 import WorkItem from '../../components/WorkItem/WorkItem'
-import divider_line from './divider_line.png'
 import lucera_home from './lucera_home.svg'
 import alpine_home from './alpine_home.png'
 import carol_home from './carol_home.png'
@@ -14,41 +14,77 @@ class Work extends Component {
       <div className={styles.work_wrap}>
         <Helmet title="Work"/>
         <Hero 
-          line_1="Robert"
-          line_2="Sahm"
-          line_3="Selected"
-          line_4="Works"
+          line_1="Robert Sahm"
+          line_2="New York City"
+          line_3="Web Development"
+          line_4="Design"
         />
 
-        <div className={styles.work_list_wrap}>
-          <WorkItem 
-            className={styles.lucera_project_wrap}
-            company="Lucera Financial Infrastructures" 
-            jobTitle="Front End Engineer"
-            blurb="This is where the little blurb goes describing the job in short."
-            imgSrc={lucera_home}
-            linkTo={"work/lucera"}
-          />
-          <WorkItem 
-            className={styles.alpine_project_wrap}
-            company="Alpine Labs" 
-            jobTitle="Front End Engineer/Designer"
-            blurb="This is where the little blurb goes describing the job in short."
-            imgSrc={alpine_home}
-            linkTo={"work/alpine"}
-          />
-          <WorkItem 
-            className={styles.carol_project_wrap}
-            company="Carol Beehler Graphic Design" 
-            jobTitle="Front End Designer"
-            blurb="This is where the little blurb goes describing the job in short."
-            imgSrc={carol_home}
-            linkTo={"work/carol"}
-          />
-        </div>
+        {/*<div className={styles.work_list_wrap}>
+          <Link to={'work/lucera'}>
+            <div className={styles.lucera_project_wrap}>
+              <div className={styles.work_item_description}>
+                <div className={styles.text_block}>
+                  <h3 className={styles.company_title}>Lucera Financial Infrastructures</h3>
+                  <h4 className={styles.job_title}>Front End Engineer</h4>
+                  <p className={styles.blurb}>This is where the blurb goes</p>
+                </div>
+              </div>
+
+            <div className={styles.work_item_img}>
+              <img src={lucera_home} />
+            </div>
+
+            </div>
+          </Link>
+
+          <Link to={'work/alpine'}>
+            <div className={styles.alpine_project_wrap}>
+
+              <div className={styles.work_item_description}>
+                <div className={styles.text_block}>
+                  <h3 className={styles.company_title}>Alpine Labs</h3>
+                  <h4 className={styles.job_title}>Front End Engineer/Designer</h4>
+                  <p className={styles.blurb}>This is where the blurb goes</p>
+                </div>
+              </div>
+
+              <div className={styles.work_item_img}>
+                <img src={alpine_home} />
+              </div>
+
+            </div>
+          </Link>
+
+        </div>*/}
       </div>
     )
   }
 }
 
 export default Work
+
+{/*<WorkItem 
+  company="Lucera Financial Infrastructures" 
+  jobTitle="Front End Engineer"
+  blurb="This is where the little blurb goes describing the job in short."
+  imgSrc={lucera_home}
+  linkTo={"work/lucera"}
+/>
+<WorkItem 
+  className={styles.alpine_project_wrap}
+  company="Alpine Labs" 
+  jobTitle="Front End Engineer/Designer"
+  blurb="This is where the little blurb goes describing the job in short."
+  imgSrc={alpine_home}
+  linkTo={"work/alpine"}
+/>
+<WorkItem 
+  className={styles.carol_project_wrap}
+  company="Carol Beehler Graphic Design" 
+  jobTitle="Front End Designer"
+  blurb="This is where the little blurb goes describing the job in short."
+  imgSrc={carol_home}
+  linkTo={"work/carol"}
+/>
+*/}
