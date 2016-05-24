@@ -6,23 +6,31 @@
   align-items: flex-start;
   position: relative;
   margin-top: 3%;
-  width: 20%;
+  width: 30%;
   min-width: 250px;
   z-index: 1000;
 
-  .nav_item {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    font-size: .9em;
+  .nav_item { 
+    flex: 1; 
+    height: auto;
 
-    a {
+    @media (max-width: $screen-xs) { // 415 and down
+      height: 35px;
+    }
+
+    a { 
       color: $black;
 
-      &:hover {
+      &:hover { 
         color: $red;
       }
     }
+  }
+
+  @media (max-width: $screen-xs) { // 415 and down
+    flex-flow: column wrap;
+    margin-top: 7%;
+    min-width: 180px;
+    z-index: 2000;
   }
 }

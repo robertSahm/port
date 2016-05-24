@@ -8,8 +8,11 @@ class Navbar extends Component {
   renderLinks() {
     return (
       <nav className={styles.nav_wrap}>
+        <div className={styles.nav_item} key={1}>
+          <Link className="nav-link" to="/">Home</Link>
+        </div>
         <div className={styles.nav_item} key={2}>
-          <Link className="nav-link" to="/">Work</Link>
+          <Link className="nav-link" to="/work">Work</Link>
         </div>
         <div className={styles.nav_item} key={3}>
           <Link className="nav-link" to="/about">About</Link>

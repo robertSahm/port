@@ -42,18 +42,17 @@ class Fire extends Component {
     } = this.state
 
     return (
-      <div className={styles.fire_wrap}>
-        <div className={styles.fire_color_revealer}>
-          <MtSvgLines
-            className={styles.fire_color}
-            animate={triggerLineAnim}
-            fade={true}
-            duration={5000}
-            stagger={75}
-            timing={'ease-in-out'}
-            wait={1000}
-          >
-            <svg viewBox="0 0 690 591" version="1.1">
+      <div className={styles.fire_inner_wrap}>
+        <MtSvgLines
+          className={styles.fire_color}
+          animate={triggerLineAnim}
+          fade={true}
+          duration={5000}
+          stagger={75}
+          timing={'ease-in-out'}
+          wait={1000}
+        >
+          <svg viewBox="0 0 690 591" version="1.1">
               <g id="Home" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="-" transform="translate(-506.000000, -54.000000)">
                       <g id="fireColor" transform="translate(506.000000, 54.000000)">
@@ -69,9 +68,9 @@ class Fire extends Component {
                       </g>
                   </g>
               </g>
-            </svg>
-          </MtSvgLines>
-        </div>
+          </svg>
+        </MtSvgLines>
+   
 
         <MtSvgLines
           className={styles.fire_lines}

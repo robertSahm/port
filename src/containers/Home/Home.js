@@ -8,14 +8,12 @@ class Home extends Component {
     return (
       <div className={styles.content}>
         <Helmet title="Home"/>
-        <div className={styles.hero_wrap}>
-          <Hero 
-            line_1="Robert Sahm"
-            line_2="New York City"
-            line_3="Web Development"
-            line_4="Design"
-          />
-        </div>
+        <Hero 
+          line_1="Robert Sahm"
+          line_2="New York City"
+          line_3="Web Development"
+          line_4="Design"
+        />
       </div>
     )
   }

@@ -20,7 +20,7 @@ class Work extends Component {
           line_4="Design"
         />
 
-        {/*<div className={styles.work_list_wrap}>
+        <div className={styles.work_list_wrap}>
           <Link to={'work/lucera'}>
             <div className={styles.lucera_project_wrap}>
               <div className={styles.work_item_description}>
@@ -56,7 +56,7 @@ class Work extends Component {
             </div>
           </Link>
 
-        </div>*/}
+        </div>
       </div>
     )
   }
