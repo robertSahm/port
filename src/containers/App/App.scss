@@ -1,7 +1,18 @@
 .app {
+  // position: absolute;
   // display: flex;
   // flex-direction: column;
   // justify-content: flex-start; /* align items in Main Axis */
   // align-items: stretch; /* align items in Cross Axis */
   // align-content: stretch; /* Extra space in Cross Axis */
 }
+
+.navbar_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+
+

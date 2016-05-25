@@ -6,7 +6,7 @@ import styles from './Home.scss'
 class Home extends Component {
   render() {
     return (
-      <div className={styles.content}>
+      <div className={styles.home_content}>
         <Helmet title="Home"/>
         <Hero 
           line_1="Robert Sahm"

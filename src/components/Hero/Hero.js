@@ -30,14 +30,14 @@ class Hero extends Component {
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
             <h1 className={styles.text_black}>{this.props.line_4}</h1>
           </ReactFitText>
-          <ReactFitText compressor={5.5} minFontSize={18} className={styles.tagline}>
+          {/*<ReactFitText compressor={5.5} minFontSize={18} className={styles.tagline}>
             <Navbar />
-          </ReactFitText>
+          </ReactFitText>*/}
         </div>
 
-        <div className={styles.fire_wrap}>
+{/*        <div className={styles.fire_wrap}>
           <FireHome />
-        </div>
+        </div>*/}
 
       </div>
     )

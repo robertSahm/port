@@ -28,10 +28,10 @@ export default () => {
       {/* Routes */}
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
-      <Route path="/work" component={Work} />
-      <Route path="/work/alpine" component={Alpine} />
-      <Route path="/work/lucera" component={Lucera} />
-      <Route path="/work/carol" component={Carol} />
+      {/*<Route path="/work" component={Work} />*/}
+      <Route path="/alpine" component={Alpine} />
+      <Route path="/lucera" component={Lucera} />
+      <Route path="/carol" component={Carol} />
 
       {/* Catch all route */}
       <Route path="*" component={NotFound} status={404} />

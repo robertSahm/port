@@ -1,9 +1,29 @@
 /**
  * Override Bootstrap styles that you can't modify via variables here.
- *
- */
- // $font-family-sans-serif:  "Droid-Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
- // $font-family-serif:       "Droid-Serif", "Times New Roman", Times, serif !default;
- // //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
- // $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
- // $font-family-base:        $font-family-sans-serif !default;
+*/
+
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {
+  border-color: transparent;
+}
+
+ul.dropdown-menu {
+  box-shadow: none; 
+  // border-left: 3px solid $pink;
+  border-image: url("./border1.png");
+  border-image-slice: 1;
+  border-image-width: 0 0 3 3;
+  border-style: solid;
+  border-radius: 0;
+
+  li {
+    opacity: 1;
+
+    a {
+      color: $black;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

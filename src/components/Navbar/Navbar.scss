@@ -1,36 +1,47 @@
 @import '../../theme/variables.scss';
 
-.nav_wrap {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: flex-start;
-  position: relative;
-  margin-top: 3%;
-  width: 30%;
-  min-width: 250px;
-  z-index: 1000;
+// .dropdown-toggle {
+//   box-shadow: none !important;
+//   box-shadow: 0 !important;
+// }
 
-  .nav_item { 
-    flex: 1; 
-    height: auto;
+// .nav_dropdown_link {
+//       border: none !important;
+//       border: 0 !important;
+//       border-color: transparent !important;
+// }
 
-    @media (max-width: $screen-xs) { // 415 and down
-      height: 35px;
-    }
-
-    a { 
-      color: $black;
-
-      &:hover { 
-        color: $red;
-      }
-    }
-  }
-
-  @media (max-width: $screen-xs) { // 415 and down
-    flex-flow: column wrap;
-    margin-top: 7%;
-    min-width: 180px;
-    z-index: 2000;
-  }
-}
+// .navbar-inner,
+// .navbar-fixed-top .navbar-inner,
+// .navbar-fixed-bottom .navbar-inner,
+// .navbar-static-top .navbar-inner {
+//   background: none;
+//   border: none;
+//   -webkit-border-radius: 0;
+//   border-radius: 0;
+//   -moz-box-shadow: none;
+//   -webkit-box-shadow: none;
+//   box-shadow: none;
+//   filter: none;
+//   padding: 0;
+// }
+// .navbar { margin-bottom: 0; }
+// .navbar .nav { margin: 0; }
+// .navbar .brand,
+// .navbar .nav > li > a {
+//   margin: 0;
+//   padding: 0;
+//   text-shadow: none;
+// }
+// .navbar .btn-navbar,
+// .navbar .btn-navbar:hover {
+//   background: none;
+//   -webkit-border-radius: 0;
+//   border-radius: 0;
+//   -moz-box-shadow: none;
+//   -webkit-box-shadow: none;
+//   box-shadow: none;
+//   margin: 0;
+//   padding: 0;
+//   text-shadow: none;
+// }

@@ -55,11 +55,6 @@ $screen-sm: 768px; // ipad
 $screen-md: 1024px; // laptop
 $screen-lg: 1440px; // desktop
 
-* {
-  padding: 0;
-  margin: 0;
-}
-
 html, body {
   width: 100%;
   height: 100%;
@@ -93,66 +88,84 @@ html, body {
   color: $black;
 }
 
-// .fadeEnter {
-//   border: 5px solid red;
-//   opacity: 0;
-// }
+// Navbar
+$navbar-height:                    40px;
+// $navbar-margin-bottom:             $line-height-computed !default;
+// $navbar-border-radius:             $border-radius-base !default;
+// $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
+// $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
+// $navbar-collapse-max-height:       340px !default;
 
-// .fadeEnterActive {
-//   border: 10px solid green;
-//   transition: 5s ease-in all;
-//   opacity: 1;
-// }
+$navbar-default-color:             $black;
+$navbar-default-bg:                transparent;
+$navbar-default-border:            transparent;
 
-// .fadeLeave {
-//   opacity: .5;
-// }
+// Navbar links
+$navbar-default-link-color:                $black;
+$navbar-default-link-hover-color:          $pink;
+$navbar-default-link-hover-bg:             transparent;
+$navbar-default-link-active-color:         $red; // Active tab
+$navbar-default-link-active-bg:            transparent;
+// $navbar-default-link-disabled-color:       #ccc !default;
+// $navbar-default-link-disabled-bg:          transparent !default;
 
-// :global {
-//   .fadeEnter {
-//     border: 5px solid red;
-//     opacity: 0;
-//   }
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           $black;
+$navbar-default-toggle-icon-bar-bg:        $black;
+$navbar-default-toggle-border-color:       $black;
 
-//   .fadeEnterActive {
-//     border: 10px solid green;
-//     transition: 5s ease-in all;
-//     opacity: 1;
-//   }
 
-//   .fadeLeave {
-//     opacity: .5;
-//   }
-// }
+//== Navs
+$nav-link-padding:                          10px 15px;
+$nav-link-hover-bg:                         transparent;
 
-// .fade-enter {
-//   border: 5px solid red;
-//   opacity: 0;
-// }
+$nav-disabled-link-color:                   transparent;
+$nav-disabled-link-hover-color:             $red;
 
-// .fade-enter-active {
-//   border: 10px solid green;
-//   transition: 5s ease-in all;
-//   opacity: 1;
-// }
+//== Tabs
+$nav-tabs-border-color:                     transparent;
 
-// .fade-leave {
-//   opacity: .5;
-// }
+$nav-tabs-link-hover-border-color:          transparent;
 
-// :global {
-//   .fade-enter {
-//     border: 5px solid red;
-//     opacity: 0;
-//   }
+$nav-tabs-active-link-hover-bg:             transparent;
+$nav-tabs-active-link-hover-color:          transparent;
+$nav-tabs-active-link-hover-border-color:   transparent;
 
-//   .fade-enter-active {
-//     border: 10px solid green;
-//     transition: 5s ease-in all;
-//     opacity: 1;
-//   }
+$nav-tabs-justified-link-border-color:            transparent;
+$nav-tabs-justified-active-link-border-color:     $red;
 
-//   .fade-leave {
-//     opacity: .5;
-//   }
-// }
+//== Pills
+$nav-pills-border-radius:                   0;
+$nav-pills-active-link-hover-bg:            green;
+$nav-pills-active-link-hover-color:         blue;
+
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+$dropdown-bg:                    transparent;
+//** Dropdown menu `border-color`.
+$dropdown-border:                transparent;
+//** Dropdown menu `border-color` **for IE8**.
+$dropdown-fallback-border:       transparent;
+//** Divider color for between dropdown items.
+$dropdown-divider-bg:            $red;
+
+//** Dropdown link text color.
+$dropdown-link-color:            $black;
+$dropdown-link-hover-color:      $white;
+$dropdown-link-hover-bg:         $pink;
+
+//** Active dropdown menu item text color.
+$dropdown-link-active-color:     $red;
+//** Active dropdown menu item background color.
+$dropdown-link-active-bg:        blue;
+
+//** Text color for headers within dropdown menus.
+$dropdown-header-color:          blue;
+
+//** Deprecated `$dropdown-caret-color` as of v3.1.0
+$dropdown-caret-color:           $red;

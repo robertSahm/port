@@ -7,18 +7,32 @@ import WorkItem from '../../components/WorkItem/WorkItem'
 import lucera_home from './lucera_home.svg'
 import alpine_home from './alpine_home.png'
 import carol_home from './carol_home.png'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 class Work extends Component {
   render() {
+    // const transitionOptions = {
+    //   transitionName: 
+    // }
+
     return (
       <div className={styles.work_wrap}>
         <Helmet title="Work"/>
-        <Hero 
-          line_1="Robert Sahm"
-          line_2="New York City"
-          line_3="Web Development"
-          line_4="Design"
-        />
+        {/* <ReactCSSTransitionGroup 
+          transitionName={styles} 
+          transitionAppearTimeout={1000}
+          transitionEnterTimeout={1000}
+          transitionLeaveTimeout={1000}
+        >*/}
+          <Hero 
+            line_1="Robert Sahm"
+            line_2="New York City"
+            line_3="Web Development"
+            line_4="Design"
+          />
+        {/*</ReactCSSTransitionGroup>*/}
+
+
 
         <div className={styles.work_list_wrap}>
           <Link to={'work/lucera'}>

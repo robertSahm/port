@@ -1,36 +1,73 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router'
+import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap'
 import ReactFitText from 'react-fittext'
+import NavbarBS from 'react-bootstrap/lib/Navbar';
+import Nav from 'react-bootstrap/lib/Nav';
+import NavItem from 'react-bootstrap/lib/NavItem';
+import NavDropdown from 'react-bootstrap/lib/NavDropdown';
+import MenuItem from 'react-bootstrap/lib/MenuItem';
 import styles from './Navbar.scss'
 
 class Navbar extends Component {
-  renderLinks() {
-    return (
-      <nav className={styles.nav_wrap}>
-        <div className={styles.nav_item} key={1}>
-          <Link className="nav-link" to="/">Home</Link>
-        </div>
-        <div className={styles.nav_item} key={2}>
-          <Link className="nav-link" to="/work">Work</Link>
-        </div>
-        <div className={styles.nav_item} key={3}>
-          <Link className="nav-link" to="/about">About</Link>
-        </div>
-        <div className={styles.nav_item} key={4}>
-          <Link className="nav-link" to="/contact">Contact</Link>
-        </div>
-      </nav>
-    )
+  constructor( props ) {
+    super( props )
+
+    this.state = {
+      activeTab: 1
+    }
+  }
+
+  handleSelect = (eventKey) => {
+    event.preventDefault();
+    const setActiveTab = eventKey
+
+    this.setState({
+      activeTab: setActiveTab
+    })
   }
 
   render() {
+    const {
+      activeTab
+    } = this.state
+
+    console.log(this.state.activeTab)
     return (
-      <div>
-        {this.renderLinks()}
-      </div>
+      <NavbarBS>
+        <Nav bsStyle="tabs" activeKey={this.state.activeTab} onSelect={this.handleSelect}>
+          <IndexLinkContainer to="/">
+            <NavItem eventKey={1}>Home</NavItem>
+          </IndexLinkContainer>
+          <NavDropdown eventKey={2} title="Work" id="nav-dropdown">
+            <LinkContainer to="/lucera">
+              <MenuItem eventKey="2.1">Lucera Financial Infrastructures</MenuItem>
+            </LinkContainer>
+            <LinkContainer to="/alpine">
+              <MenuItem eventKey="2.2">Alpine Labs</MenuItem>
+            </LinkContainer>
+            <LinkContainer to="/carol">
+              <MenuItem eventKey="2.3">Carol Beehler Graphic Design</MenuItem>
+            </LinkContainer>
+          </NavDropdown>
+          <LinkContainer to="/about">
+            <NavItem eventKey={3} title="About">About</NavItem>
+          </LinkContainer>
+          <LinkContainer to="/contact">
+            <NavItem eventKey={4} title="Contact">Contact</NavItem>
+          </LinkContainer>
+        </Nav>
+      </NavbarBS>
     )
   }
+
+  // render() {
+  //   return (
+  //     <div>
+  //       {this.renderLinks()}
+  //     </div>
+  //   )
+  // }
 }
 
 function mapStateToProps(state) {
