@@ -8,6 +8,7 @@ import NavItem from 'react-bootstrap/lib/NavItem';
 import NavDropdown from 'react-bootstrap/lib/NavDropdown';
 import MenuItem from 'react-bootstrap/lib/MenuItem';
 import styles from './Navbar.scss'
+import Mailto from 'react-mailto'
 
 class Navbar extends Component {
   constructor( props ) {
@@ -53,9 +54,11 @@ class Navbar extends Component {
           <LinkContainer to="/about">
             <NavItem eventKey={3} title="About">About</NavItem>
           </LinkContainer>
-          <LinkContainer to="/contact">
-            <NavItem eventKey={4} title="Contact">Contact</NavItem>
-          </LinkContainer>
+          <li className={styles.mailto_wrap}>
+            <Mailto email="r@robertsahm.com" obfuscate={true}>
+              Contact
+            </Mailto>
+          </li>
         </Nav>
       </NavbarBS>
     )

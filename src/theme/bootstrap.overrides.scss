@@ -9,20 +9,18 @@
 }
 
 ul.dropdown-menu {
-  box-shadow: none; 
-  // border-left: 3px solid $pink;
+  box-shadow: none;
   border-image: url("./border1.png");
   border-image-slice: 1;
-  border-image-width: 0 0 3 3;
+  border-image-width: 0 0 6 6;
   border-style: solid;
-  border-radius: 0;
 
   li {
     opacity: 1;
 
     a {
       color: $black;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 500;
     }
   }

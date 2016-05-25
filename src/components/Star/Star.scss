@@ -1,0 +1,38 @@
+@import '../../theme/variables.scss';
+
+.star_inner_wrap {
+  position: relative;
+  top: -12%;
+  right: -12%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star_color, .star_lines {
+  flex: 1;
+
+  @media (min-width: $screen-xs) {}
+  @media (min-width: $screen-sm) {}
+  @media (min-width: $screen-md) {}
+  @media (min-width: $screen-lg) {}
+}
+
+.star_color {
+  position: relative;
+  right: -50%;
+  z-index: 0;
+}
+
+.star_lines {
+  z-index: 100;
+}
+
+.click2animate {
+  z-index: 9999;
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+}

@@ -114,6 +114,7 @@
     "react-fittext": "^0.1.1",
     "react-helmet": "^2.2.0",
     "react-inline-css": "^2.0.0",
+    "react-mailto": "^0.3.0",
     "react-mt-svg-lines": "^0.4.5",
     "react-redux": "^4.0.0",
     "react-router": "2.0.0",

@@ -1,6 +1,6 @@
 @import '../../theme/variables.scss';
 
-.hero_wrap {
+.hero_about_wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,11 +11,11 @@
   left: 0;
   overflow: hidden;
 
-  .hero_text_wrap {
+  .hero_about_text_wrap {
     flex: 1;
     width: 100%;
     padding-left: 3%;
-    margin-top: -10%;
+    margin-top: -20%;
   }
   
   .graphic_wrap {
@@ -33,7 +33,7 @@
   @media (max-width: $screen-xs) { // 415 and down
     display: block;
 
-    .hero_text_wrap {
+    .hero_about_text_wrap {
       margin-top: 12% !important;
 
       h1 {
@@ -50,7 +50,7 @@
   @media (min-width: $screen-xs) and (max-width: $screen-sm) { // 415 and 768
     display: block;
 
-    .hero_text_wrap {
+    .hero_about_text_wrap {
       margin-top: 7% !important;
     }
 
@@ -61,7 +61,7 @@
   }
 
   @media (min-width: $screen-md) {
-    .hero_text_wrap {
+    .hero_about_text_wrap {
       
     }
   }
@@ -78,7 +78,7 @@
 
 }
 
-.hero_text_wrap {
+.hero_about_text_wrap {
   h1 {
     line-height: 1em;
 

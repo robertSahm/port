@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
-import ReactDom from 'react-dom'
-import { Link } from 'react-router'
-import { connect } from 'react-redux'
-import Navbar from '../../components/Navbar/Navbar';
 import ReactFitText from 'react-fittext'
-import styles from './Hero.scss'
-import FireHome from '../FireHome/FireHome'
+import styles from './HeroAbout.scss'
+import Star from '../Star/Star'
 
-class Hero extends Component {
+class HeroAbout extends Component {
   
   render() {
     const comp = 1.2
@@ -15,9 +11,9 @@ class Hero extends Component {
     const maxFontSize = 71
    
     return (
-      <div className={styles.hero_wrap}>
+      <div className={styles.hero_about_wrap}>
 
-        <div className={styles.hero_text_wrap}>
+        <div className={styles.hero_about_text_wrap}>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
             <h1 className={styles.text_pink}>{this.props.line_1}</h1>
           </ReactFitText>
@@ -33,7 +29,7 @@ class Hero extends Component {
         </div>
 
         <div className={styles.graphic_wrap}>
-          <FireHome />
+          <Star />
         </div>
 
       </div>
@@ -41,4 +37,4 @@ class Hero extends Component {
   }
 }
 
-export default Hero
+export default HeroAbout

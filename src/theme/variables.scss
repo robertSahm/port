@@ -142,16 +142,10 @@ $nav-pills-active-link-hover-color:         blue;
 
 
 //== Dropdowns
-//
-//## Dropdown menu container and contents.
-
-//** Background for the dropdown menu.
 $dropdown-bg:                    transparent;
-//** Dropdown menu `border-color`.
 $dropdown-border:                transparent;
 //** Dropdown menu `border-color` **for IE8**.
 $dropdown-fallback-border:       transparent;
-//** Divider color for between dropdown items.
 $dropdown-divider-bg:            $red;
 
 //** Dropdown link text color.
@@ -159,13 +153,9 @@ $dropdown-link-color:            $black;
 $dropdown-link-hover-color:      $white;
 $dropdown-link-hover-bg:         $pink;
 
-//** Active dropdown menu item text color.
 $dropdown-link-active-color:     $red;
-//** Active dropdown menu item background color.
 $dropdown-link-active-bg:        blue;
 
-//** Text color for headers within dropdown menus.
 $dropdown-header-color:          blue;
 
-//** Deprecated `$dropdown-caret-color` as of v3.1.0
 $dropdown-caret-color:           $red;
