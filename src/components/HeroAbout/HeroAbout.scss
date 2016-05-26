@@ -20,7 +20,7 @@
     top: 0;
     left: 0;
   }
-  
+
   .graphic_wrap {
     flex: 1;
     display: flex;
@@ -49,7 +49,7 @@
       // top: 13%;
     }
   }
-  
+
   @media (min-width: $screen-xs) and (max-width: $screen-sm) { // 415 and 768
     // display: block;
 
@@ -65,7 +65,7 @@
 
   @media (min-width: $screen-md) {
     .hero_about_text_wrap {
-      
+
     }
   }
 }
@@ -110,5 +110,3 @@
     font-family: $font-family-serif;
   }
 }
-
-
