@@ -14,11 +14,11 @@ import {
     Home,
     Lucera,
     NotFound,
-    Work
+    Work, 
+    Resume
   } from 'containers';
 
 export default () => {
-
   return (
     <Route path="/" component={App}>
 
@@ -28,7 +28,7 @@ export default () => {
       {/* Routes */}
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
-      {/*<Route path="/work" component={Work} />*/}
+      <Route path="/resume" component={Resume} />
       <Route path="/alpine" component={Alpine} />
       <Route path="/lucera" component={Lucera} />
       <Route path="/carol" component={Carol} />

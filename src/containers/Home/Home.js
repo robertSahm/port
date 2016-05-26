@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import Hero from '../../components/Hero/Hero'
 import styles from './Home.scss'
 
+
+
 class Home extends Component {
   render() {
     return (

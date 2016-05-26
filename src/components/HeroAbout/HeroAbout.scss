@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;  
-  position: relative;
+  height: 100%;
+  position: absolute;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -16,6 +16,9 @@
     width: 100%;
     padding-left: 3%;
     margin-top: -20%;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   
   .graphic_wrap {
@@ -31,32 +34,32 @@
   }
 
   @media (max-width: $screen-xs) { // 415 and down
-    display: block;
+    // display: block;
 
     .hero_about_text_wrap {
-      margin-top: 12% !important;
+      // margin-top: 12% !important;
 
       h1 {
-        line-height: .85em;
+        // line-height: .85em;
       }
     }
 
     .graphic_wrap {
-      width: 190%;
-      top: 13%;
+      // width: 190%;
+      // top: 13%;
     }
   }
   
   @media (min-width: $screen-xs) and (max-width: $screen-sm) { // 415 and 768
-    display: block;
+    // display: block;
 
     .hero_about_text_wrap {
-      margin-top: 7% !important;
+      // margin-top: 7% !important;
     }
 
     .graphic_wrap {
-      width: 180%;
-      top: 13%;
+      // width: 180%;
+      // top: 13%;
     }
   }
 

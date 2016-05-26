@@ -2,13 +2,13 @@
 
 .star_inner_wrap {
   position: relative;
-  top: -12%;
-  right: -12%;
+  top: -7%;
+  right: -7%;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .star_color, .star_lines {

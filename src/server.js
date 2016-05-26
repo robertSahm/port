@@ -28,6 +28,41 @@ app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
 
 app.use(Express.static(path.join(__dirname, '..', 'static')));
 
+app.get('/resume', function (req, res) {
+  res.download(path.join(__dirname, '..', 'static', 'resume.pdf'));
+});
+
+app.get('/download', function (req, res) {
+  var options = {
+    method: 'GET',
+    host: 'localhost',
+    port: port,
+    path: '/resume'
+  };
+
+  var request = http.request(options, function(response) {
+    var data = [];
+
+    response.on('data', function(chunk) {
+      data.push(chunk);
+    });
+
+    response.on('end', function() {
+      data = Buffer.concat(data);
+      console.log('requested content length: ', response.headers['content-length']);
+      console.log('parsed content length: ', data.length);
+      res.writeHead(200, {
+        'Content-Type': 'application/pdf',
+        'Content-Disposition': 'attachment; filename=working-test.pdf',
+        'Content-Length': data.length
+      });
+      res.end(data);
+    });
+  });
+
+  request.end();
+});
+
 app.use((req, res) => {
   if (__DEVELOPMENT__) {
     // Do not cache webpack stats: the script file would change since
