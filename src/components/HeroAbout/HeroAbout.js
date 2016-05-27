@@ -12,7 +12,7 @@ class HeroAbout extends Component {
 
     return (
       <div className={styles.hero_about_wrap}>
-        
+
         <div className={styles.hero_about_text_wrap}>
           <ReactFitText compressor={comp} minFontSize={minFontSize} maxFontSize={maxFontSize}>
             <h1 className={styles.text_pink}>{this.props.line_1}</h1>
@@ -32,16 +32,7 @@ class HeroAbout extends Component {
           <Star />
         </div>
 
-        <div className={styles.about_content_wrap}>
-          <div className={styles.about_headline}>
-            <h1>Hello! It's me.</h1>
-          </div>
-          <div className="">
-            <h4>Bands played in: 20</h4>
-            <h4>Drumsticks broken: 32,549</h4>
-            <h4>Dances: at weddings</h4>
-          </div>
-        </div>
+        
 
       </div>
     )

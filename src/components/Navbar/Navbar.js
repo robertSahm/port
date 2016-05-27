@@ -59,6 +59,9 @@ class Navbar extends Component {
               Contact
             </Mailto>
           </li>
+          <li className={styles.resume_wrap}>
+            <a href="/resume">Resume</a>
+          </li>
         </Nav>
       </NavbarBS>
     )

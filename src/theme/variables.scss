@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-family: $font-family-sans-serif;
+  font-size: 1.1em;
 
   &.large {
 
@@ -72,21 +73,19 @@ html, body {
   width: 100%;
 }
 
-.text_pink {
-  color: $pink;
-}
+.text_pink { color: $pink; }
+.text_red { color: $red; }
+.text_yellow { color: $yellow; }
+.text_black { color: $black; }
 
-.text_red {
-  color: $red;
-}
-
-.text_yellow {
-  color: $yellow;
-}
-
-.text_black {
-  color: $black;
-}
+.flex_1 { flex: 1; }
+.flex_2 { flex: 2; }
+.flex_3 { flex: 3; }
+.flex_4 { flex: 4; }
+.flex_5 { flex: 5; }   
+.flex_6 { flex: 6; }
+.flex_7 { flex: 7; }
+.flex_8 { flex: 8; }
 
 // Navbar
 $navbar-height:                    40px;
