@@ -21,6 +21,8 @@ $pink:                  rgba(239, 91, 161, 1);
 $red:                   rgba(241, 92, 42, 1);
 $yellow:                rgba(255, 189, 31, 1);
 $white:                 rgba(246, 240, 228, 1);
+$alpine_blue:           rgba(57, 66, 81, 1);
+$alpine_white:          rgba(164, 179, 179, 1);
 
 // $font-family-serif:  "Sorts Mill Goudy", Times, serif !default;
 $font-family-serif:     "Droid Serif", "Times New Roman", Times, serif !default;
@@ -88,16 +90,16 @@ html, body {
 .flex_8 { flex: 8; }
 
 // Navbar
-$navbar-height:                    40px;
-// $navbar-margin-bottom:             $line-height-computed !default;
-// $navbar-border-radius:             $border-radius-base !default;
-// $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
-// $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
-// $navbar-collapse-max-height:       340px !default;
+$navbar-height:                            50px;
+// $navbar-margin-bottom:                  $line-height-computed !default;
+// $navbar-border-radius:                  $border-radius-base !default;
+// $navbar-padding-horizontal:             floor(($grid-gutter-width / 2)) !default;
+// $navbar-padding-vertical:               (($navbar-height - $line-height-computed) / 2) !default;
+// $navbar-collapse-max-height:            340px !default;
 
-$navbar-default-color:             $black;
-$navbar-default-bg:                transparent;
-$navbar-default-border:            transparent;
+$navbar-default-color:                     $black;
+$navbar-default-bg:                        transparent;
+$navbar-default-border:                    transparent;
 
 // Navbar links
 $navbar-default-link-color:                $black;

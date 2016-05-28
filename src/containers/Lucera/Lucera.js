@@ -17,7 +17,7 @@ class Lucera extends Component {
   render() {
     const comp = 1.2
     const minFontSize = 27
-  const maxFontSize = 71 
+    const maxFontSize = 71 
   
     return (
       <div className={styles.lucera_wrap}>
@@ -58,7 +58,7 @@ class Lucera extends Component {
               <img src={img3} className={styles.flex_1} />
               <img src={img4} className={styles.flex_3} />
             </div>
-            <div className={styles.img_row}>
+            <div className={styles.img_row_compress}>
               <img src={img5} className={styles.flex_1} />
             </div>
             <div className={styles.img_row}>
