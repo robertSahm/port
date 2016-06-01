@@ -35,7 +35,7 @@ class Navbar extends Component {
 
     console.log(this.state.activeTab)
     return (
-      <NavbarBS>
+      <NavbarBS className={styles.nav_wrap}>
         <Nav bsStyle="tabs" activeKey={this.state.activeTab} onSelect={this.handleSelect}>
           <IndexLinkContainer to="/">
             <NavItem eventKey={1}>Home</NavItem>
@@ -56,7 +56,7 @@ class Navbar extends Component {
           </LinkContainer>
           <li className={styles.mailto_wrap}>
             <Mailto email="r@robertsahm.com" obfuscate={true}>
-              Contact
+              Email me
             </Mailto>
           </li>
           <li className={styles.resume_wrap}>
@@ -66,14 +66,6 @@ class Navbar extends Component {
       </NavbarBS>
     )
   }
-
-  // render() {
-  //   return (
-  //     <div>
-  //       {this.renderLinks()}
-  //     </div>
-  //   )
-  // }
 }
 
 function mapStateToProps(state) {

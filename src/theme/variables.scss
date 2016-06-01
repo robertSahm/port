@@ -75,6 +75,11 @@ html, body {
   width: 100%;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .text_pink { color: $pink; }
 .text_red { color: $red; }
 .text_yellow { color: $yellow; }
@@ -117,7 +122,7 @@ $navbar-default-toggle-border-color:       $black;
 
 
 //== Navs
-$nav-link-padding:                          10px 15px;
+$nav-link-padding:                          auto;
 $nav-link-hover-bg:                         transparent;
 
 $nav-disabled-link-color:                   transparent;
@@ -151,11 +156,11 @@ $dropdown-divider-bg:            $red;
 
 //** Dropdown link text color.
 $dropdown-link-color:            $black;
-$dropdown-link-hover-color:      $white;
-$dropdown-link-hover-bg:         $pink;
+$dropdown-link-hover-color:      $red;
+$dropdown-link-hover-bg:         transparent;
 
 $dropdown-link-active-color:     $red;
-$dropdown-link-active-bg:        blue;
+$dropdown-link-active-bg:        transparent;
 
 $dropdown-header-color:          blue;
 
