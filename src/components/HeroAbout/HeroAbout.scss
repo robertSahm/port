@@ -10,14 +10,10 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  // border: 1px solid blue;
 
   .hero_about_text_wrap {
     flex: none;
-
     min-width: 100%;
-    // padding-left: 3%;
-    // margin-top: -20%;
     position: relative;
     top: 0;
     left: 0;
@@ -34,42 +30,6 @@
     right: 0;
     height: inherit;
     width: 120%;
-  }
-
-  @media (max-width: $screen-xs) { // 415 and down
-    // display: block;
-
-    .hero_about_text_wrap {
-      // margin-top: 12% !important;
-
-      h1 {
-        // line-height: .85em;
-      }
-    }
-
-    .graphic_wrap {
-      // width: 190%;
-      // top: 13%;
-    }
-  }
-
-  @media (min-width: $screen-xs) and (max-width: $screen-sm) { // 415 and 768
-    // display: block;
-
-    .hero_about_text_wrap {
-      // margin-top: 7% !important;
-    }
-
-    .graphic_wrap {
-      // width: 180%;
-      // top: 13%;
-    }
-  }
-
-  @media (min-width: $screen-md) {
-    .hero_about_text_wrap {
-
-    }
   }
 }
 

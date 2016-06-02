@@ -22,6 +22,7 @@ class Lucera extends Component {
     return (
       <div className={styles.lucera_wrap}>
         <Helmet title="Lucera"/>
+        
 
         <div className={styles.graphic_wrap}>
           <Bulb />
@@ -49,27 +50,29 @@ class Lucera extends Component {
             <p>- Design and code branding and marketing materials including main marketing site Lucera.com</p>
             <p>- SmartOS, JavaScript, React.js, Sass, D3.js, Sass</p>
           </div>
+
           <div className={styles.img_block}>
             <div className={styles.img_row}>
-              <img src={img1} className={styles.flex_6} />
-              <img src={img2} className={styles.flex_1} />
+              <img src={img1} className={styles.image_1}/>
+              <img src={img2} className={styles.image_2}/>
             </div>
             <div className={styles.img_row}>
-              <img src={img3} className={styles.flex_1} />
-              <img src={img4} className={styles.flex_3} />
-            </div>
-            <div className={styles.img_row_compress}>
-              <img src={img5} className={styles.flex_1} />
+              <img src={img3} className={styles.image_3}/>
+              <img src={img4} className={styles.image_4}/>
             </div>
             <div className={styles.img_row}>
-              <img src={img6} className={styles.flex_1} />
-              <img src={img7} className={styles.flex_2} />
+              <img src={img5} className={styles.image_5}/>
             </div>
             <div className={styles.img_row}>
-              <img src={img8} className={styles.flex_3} />
-              <img src={img9} className={styles.flex_1} />
+              <img src={img6} className={styles.image_6}/>
+              <img src={img7} className={styles.image_7}/>
+            </div>
+            <div className={styles.img_row}>
+              <img src={img8} className={styles.image_8}/>
+              <img src={img9} className={styles.image_9}/>
             </div>
           </div>
+
         </div>
       </div>
     )

@@ -52,11 +52,27 @@ p {
   }
 }
 
+///////////////////
 // Media Queries
-$screen-xs: 415px; // iphone 
-$screen-sm: 768px; // ipad
-$screen-md: 1024px; // laptop
-$screen-lg: 1440px; // desktop
+//////////////////
+
+// iphone 6s
+$xs-min: 0px;
+$xs-max: 415px;
+
+// ipad
+$sm-min: 416px; 
+$sm-max: 768px; 
+
+// laptop
+$md-min: 769px; 
+$md-max: 1024px;
+
+// desktop
+$lg-min: 1025px;
+$lg-max: 7000px; 
+
+//////////////////////////////
 
 html, body {
   width: 100%;
@@ -75,26 +91,39 @@ html, body {
   width: 100%;
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
 //////////////////////////
 nav.navbar.navbar-default {
   margin: 0;
   padding: 0;
   min-width: 100%;
   height: 55px;
-  padding-left: 3%;
   
   .container {
     margin: 0;
     padding: 0;
-    min-width: 100%;
     height: 55px;
+
+    .navbar-nav {
+      margin: 0;
+      padding: 0;
+      padding-left: 3%;
+    }
   }
 }
+// nav.navbar.navbar-default {
+//   margin: 0;
+//   padding: 0;
+//   min-width: 100%;
+//   height: 55px;
+//   padding-left: 3%;
+  
+//   .container {
+//     margin: 0;
+//     padding: 0;
+//     min-width: 100%;
+//     height: 55px;
+//   }
+// }
 
 ////////////////////////
 
@@ -102,15 +131,6 @@ nav.navbar.navbar-default {
 .text_red { color: $red; }
 .text_yellow { color: $yellow; }
 .text_black { color: $black; }
-
-.flex_1 { flex: 1; }
-.flex_2 { flex: 2; }
-.flex_3 { flex: 3; }
-.flex_4 { flex: 4; }
-.flex_5 { flex: 5; }   
-.flex_6 { flex: 6; }
-.flex_7 { flex: 7; }
-.flex_8 { flex: 8; }
 
 // Navbar
 $navbar-height:                            50px;

@@ -13,11 +13,6 @@
 
 .fire_color, .fire_lines {
   flex: 1;
-
-  @media (min-width: $screen-xs) {}
-  @media (min-width: $screen-sm) {}
-  @media (min-width: $screen-md) {}
-  @media (min-width: $screen-lg) {}
 }
 
 .fire_color {

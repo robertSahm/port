@@ -1,19 +1,8 @@
 @import '../../theme/variables.scss';
 
 .bulb_inner_wrap {
-  width: 35%;
-  flex: 1;
   height: 100%;
-  overflow: hidden;
-}
-
-.bulb {
-  flex: 1;
-
-  @media (min-width: $screen-xs) {}
-  @media (min-width: $screen-sm) {}
-  @media (min-width: $screen-md) {}
-  @media (min-width: $screen-lg) {}
+  width: 35%;
 }
 
 .bulb {

@@ -30,7 +30,7 @@
     width: 120%;
   }
 
-  @media (max-width: $screen-xs) { // 415 and down
+  @media (max-width: $xs-max) { // 415 and down
     display: block;
 
     .hero_text_wrap {
@@ -47,7 +47,7 @@
     }
   }
   
-  @media (min-width: $screen-xs) and (max-width: $screen-sm) { // 415 and 768
+  @media (min-width: $xs-min) and (max-width: $xs-max) { // 415 and 768
     display: block;
 
     .hero_text_wrap {
@@ -60,22 +60,11 @@
     }
   }
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $md-min) {
     .hero_text_wrap {
       
     }
   }
-}
-
-@media (max-width: $screen-xs) {
-
-}
-
-@media (max-width: $screen-md) {
-
-}
-@media (max-width: $screen-lg) {
-
 }
 
 .hero_text_wrap {
