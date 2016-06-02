@@ -2,6 +2,16 @@
  * Override Bootstrap styles that you can't modify via variables here.
 */
 
+.nav-tabs {
+  // padding-left: 3%;
+
+  li {
+    margin-right: 1em;
+  }
+}
+
+
+
 .nav .open > a, 
 .nav .open > a:hover, 
 .nav .open > a:focus {
@@ -21,12 +31,15 @@ ul.dropdown-menu {
 
   li {
     opacity: 1;
+    padding: 0 25px 17px 25px;
 
     a {
       color: $black;
       font-size: 18px;
       font-weight: 400;
-      padding: 0 25px 17px 25px;
+      padding: 0;
+      min-width: 100%;
+      min-height: 100%;
     }
   }
 }

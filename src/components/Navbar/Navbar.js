@@ -36,7 +36,7 @@ class Navbar extends Component {
     console.log(this.state.activeTab)
     return (
       <NavbarBS className={styles.nav_wrap}>
-        <Nav bsStyle="tabs" activeKey={this.state.activeTab} onSelect={this.handleSelect}>
+        <Nav bsStyle="tabs" activeKey={this.state.activeTab} onSelect={this.handleSelect} className={styles.nav_inner}>
           <IndexLinkContainer to="/">
             <NavItem eventKey={1}>Home</NavItem>
           </IndexLinkContainer>

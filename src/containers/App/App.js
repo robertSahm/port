@@ -11,11 +11,19 @@ export default class App extends Component {
   }
 
   render() {
+    const navCompress = 5.5
+    const minSize = 15
+    const maxSize = 20
+
     return (
       <div className={styles.app}>
         <Helmet {...config.app.head} />
         <div className={styles.navbar_wrap}>
-          <ReactFitText compressor={5.5} minFontSize={18}>
+          <ReactFitText 
+            compressor={navCompress} 
+            minFontSize={minSize}
+            maxFontSize={maxSize}
+          >
             <Navbar />
           </ReactFitText>
         </div>
