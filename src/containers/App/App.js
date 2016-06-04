@@ -12,8 +12,8 @@ export default class App extends Component {
 
   render() {
     const navCompress = 5.5
-    const minSize = 15
-    const maxSize = 20
+    const minSize = 17
+    const maxSize = 19
 
     return (
       <div className={styles.app}>

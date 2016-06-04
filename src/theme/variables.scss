@@ -1,20 +1,38 @@
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
 // @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic);
 // == Colors
 
 // ## Gray and brand colors for use across Bootstrap.
 
 // $gray-base:             rgba(8, 20, 42, 1);
-// $gray-darker:           lighten($gray-base, 13.5%) !default; // #222
-// $gray-dark:             lighten($gray-base, 20%) !default;   // #333
-// $gray:                  lighten($gray-base, 33.5%) !default; // #555
-// $gray-light:            #4E5D6C !default;   // #999
-// $gray-lighter:          #EBEBEB !default; // #eee
+// $gray-darker:           lighten($gray-base, 13.5%); // #222
+// $gray-dark:             lighten($gray-base, 20%);   // #333
+// $gray:                  lighten($gray-base, 33.5%); // #555
+// $gray-light:            #4E5D6C;   // #999
+// $gray-lighter:          #EBEBEB; // #eee
 
-$brand-primary:         #DF691A !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-primary:         #DF691A;
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-warning:         #f0ad4e;
+$brand-danger:          #d9534f;
 
 $black:                 rgba(8, 20, 42, 1);
 $pink:                  rgba(239, 91, 161, 1);
@@ -24,15 +42,15 @@ $white:                 rgba(246, 240, 228, 1);
 $alpine_blue:           rgba(57, 66, 81, 1);
 $alpine_white:          rgba(164, 179, 179, 1);
 
-// $font-family-serif:  "Sorts Mill Goudy", Times, serif !default;
-$font-family-serif:     "Droid Serif", "Times New Roman", Times, serif !default;
-// $font-family-serif:  "Libre Baskerville", Times, serif !default;
+// $font-family-serif:  "Sorts Mill Goudy", Times, serif;
+$font-family-serif:     "Droid Serif", "Times New Roman", Times, serif;
+// $font-family-serif:  "Libre Baskerville", Times, serif;
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-// $font-family-sans-serif:  "Droid-Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $font-family-sans-serif:  "Droid-Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base:        $font-family-sans-serif !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:        $font-family-sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
@@ -51,6 +69,11 @@ p {
 
   }
 }
+
+.text_pink { color: $pink; }
+.text_red { color: $red; }
+.text_yellow { color: $yellow; }
+.text_black { color: $black; }
 
 ///////////////////
 // Media Queries
@@ -74,132 +97,127 @@ $lg-max: 7000px;
 
 //////////////////////////////
 
-html, body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+//== Media queries breakpoints
+// Extra small screen / phone
+$screen-xs:                  415px;
+$screen-xs-min:              $screen-xs;
+$screen-phone:               $screen-xs-min;
 
-#content {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-}
+// Small screen / tablet
+$screen-sm:                  768px;
+$screen-sm-min:              $screen-sm;
+$screen-tablet:              $screen-sm-min;
+
+// Medium screen / desktop
+$screen-md:                  992px;
+$screen-md-min:              $screen-md;
+$screen-desktop:             $screen-md-min;
+
+// Large screen / wide desktop
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
+$screen-lg-desktop:          $screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max:              ($screen-sm-min - 1);
+$screen-sm-max:              ($screen-md-min - 1);
+$screen-md-max:              ($screen-lg-min - 1);
+
+//////////////////////////////////////////////////////////////////
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns:              12;
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint:     $screen-phone;
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
+
+/////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
 
 //////////////////////////
-nav.navbar.navbar-default {
-  margin: 0;
-  padding: 0;
-  min-width: 100%;
-  height: 55px;
-  
-  .container {
-    margin: 0;
-    padding: 0;
-    height: 55px;
 
-    .navbar-nav {
-      margin: 0;
-      padding: 0;
-      padding-left: 3%;
-    }
-  }
-}
-// nav.navbar.navbar-default {
-//   margin: 0;
-//   padding: 0;
-//   min-width: 100%;
-//   height: 55px;
-//   padding-left: 3%;
-  
-//   .container {
-//     margin: 0;
-//     padding: 0;
-//     min-width: 100%;
-//     height: 55px;
-//   }
-// }
 
 ////////////////////////
 
-.text_pink { color: $pink; }
-.text_red { color: $red; }
-.text_yellow { color: $yellow; }
-.text_black { color: $black; }
+// // Navbar
+$navbar-height:                               50px;
+$navbar-padding-horizontal:                   0;
 
-// Navbar
-$navbar-height:                            50px;
-// $navbar-margin-bottom:                  $line-height-computed !default;
-// $navbar-border-radius:                  $border-radius-base !default;
-// $navbar-padding-horizontal:             floor(($grid-gutter-width / 2)) !default;
-// $navbar-padding-vertical:               (($navbar-height - $line-height-computed) / 2) !default;
-// $navbar-collapse-max-height:            340px !default;
+$navbar-color:                        $black;
+$navbar-bg:                           transparent;
+$navbar-border:                       transparent;
 
-$navbar-default-color:                     $black;
-$navbar-default-bg:                        transparent;
-$navbar-default-border:                    transparent;
+// // Navbar links
+$navbar-link-color:                $black;
+$navbar-link-hover-color:          $pink;
+// $navbar-link-hover-bg:             transparent;
+// $navbar-link-active-color:         $red; // Active tab
+// $navbar-link-active-bg:            transparent;
+// $navbar-link-disabled-color:       #ccc;
+// $navbar-link-disabled-bg:          transparent;
 
-// Navbar links
-$navbar-default-link-color:                $black;
-$navbar-default-link-hover-color:          $pink;
-$navbar-default-link-hover-bg:             transparent;
-$navbar-default-link-active-color:         $red; // Active tab
-$navbar-default-link-active-bg:            transparent;
-// $navbar-default-link-disabled-color:       #ccc !default;
-// $navbar-default-link-disabled-bg:          transparent !default;
-
-// Navbar toggle
-$navbar-default-toggle-hover-bg:           $black;
-$navbar-default-toggle-icon-bar-bg:        $black;
-$navbar-default-toggle-border-color:       $black;
+// // Navbar toggle
+// $navbar-toggle-hover-bg:           $red;
+// $navbar-toggle-icon-bar-bg:        $black;
+// $navbar-toggle-border-color:       green;
 
 
-//== Navs
-$nav-link-padding:                          auto;
-$nav-link-hover-bg:                         transparent;
+// //== Navs
+// $nav-link-padding:                          auto;
+// $nav-link-hover-bg:                         transparent;
 
-$nav-disabled-link-color:                   transparent;
-$nav-disabled-link-hover-color:             $red;
+// $nav-disabled-link-color:                   transparent;
+// $nav-disabled-link-hover-color:             $red;
 
-//== Tabs
-$nav-tabs-border-color:                     transparent;
+// //== Tabs
+// $nav-tabs-border-color:                     transparent;
 
-$nav-tabs-link-hover-border-color:          transparent;
+// $nav-tabs-link-hover-border-color:          transparent;
 
-$nav-tabs-active-link-hover-bg:             transparent;
-$nav-tabs-active-link-hover-color:          transparent;
-$nav-tabs-active-link-hover-border-color:   transparent;
+// $nav-tabs-active-link-hover-bg:             transparent;
+// $nav-tabs-active-link-hover-color:          transparent;
+// $nav-tabs-active-link-hover-border-color:   transparent;
 
-$nav-tabs-justified-link-border-color:            transparent;
-$nav-tabs-justified-active-link-border-color:     $red;
+// $nav-tabs-justified-link-border-color:            transparent;
+// $nav-tabs-justified-active-link-border-color:     $red;
 
-//== Pills
-$nav-pills-border-radius:                   0;
-$nav-pills-active-link-hover-bg:            green;
-$nav-pills-active-link-hover-color:         blue;
+// //== Pills
+// $nav-pills-border-radius:                   0;
+// $nav-pills-active-link-hover-bg:            green;
+// $nav-pills-active-link-hover-color:         blue;
 
 
 
-//== Dropdowns
-$dropdown-bg:                    transparent;
-$dropdown-border:                transparent;
-//** Dropdown menu `border-color` **for IE8**.
-$dropdown-fallback-border:       transparent;
-$dropdown-divider-bg:            $red;
+// //== Dropdowns
+// $dropdown-bg:                    transparent;
+// $dropdown-border:                transparent;
+// //** Dropdown menu `border-color` **for IE8**.
+// $dropdown-fallback-border:       transparent;
+// $dropdown-divider-bg:            $red;
 
-//** Dropdown link text color.
-$dropdown-link-color:            $black;
-$dropdown-link-hover-color:      $red;
-$dropdown-link-hover-bg:         transparent;
+// //** Dropdown link text color.
+// $dropdown-link-color:            $black;
+// $dropdown-link-hover-color:      $red;
+// $dropdown-link-hover-bg:         transparent;
 
-$dropdown-link-active-color:     $red;
-$dropdown-link-active-bg:        transparent;
+// $dropdown-link-active-color:     $red;
+// $dropdown-link-active-bg:        transparent;
 
-$dropdown-header-color:          blue;
+// $dropdown-header-color:          blue;
 
-$dropdown-caret-color:           $red;
+// $dropdown-caret-color:           $red;

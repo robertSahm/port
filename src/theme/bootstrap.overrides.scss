@@ -2,12 +2,159 @@
  * Override Bootstrap styles that you can't modify via variables here.
 */
 
-.nav-tabs {
+///////////////////
+// Media Queries
+//////////////////
 
-  li {
-    margin-right: 1em;
+// iphone 6s
+$xs-min: 0px;
+$xs-max: 415px;
+
+// ipad
+$sm-min: 416px; 
+$sm-max: 768px; 
+
+// laptop
+$md-min: 769px; 
+$md-max: 1024px;
+
+// desktop
+$lg-min: 1025px;
+$lg-max: 7000px; 
+
+////////////////////////////
+// Navbar hard reset
+//////////////////////////////
+
+.navbar-inner,
+.navbar-fixed-top .navbar-inner,
+.navbar-fixed-bottom .navbar-inner,
+.navbar-static-top .navbar-inner {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  filter: none;
+  padding: 0;
+}
+.navbar { margin-bottom: 0; }
+.navbar .nav { margin: 0; }
+.navbar .brand,
+.navbar .nav > li > a {
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+}
+.navbar .btn-navbar,
+.navbar .btn-navbar:hover {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  text-shadow: none;
+}
+
+//////////////////////////////////
+
+@media (min-width: $sm-min) {
+  .navbar.navbar-default {
+    box-shadow: none;
+    border-image: url("./border1.png");
+    border-image-slice: 1;
+    border-image-width: 0 0 6 0;
+    border-style: solid;
+    height: 56px;
+    top: 0;
+    left: 0;
+    padding-left: 3%;
+    background-color: transparent;
+    z-index: 99999 !important;
+    opacity: 1;
+
+    &:before {
+      content: " ";
+      background-image: url("./bg-tan.jpg");
+      opacity: .85;
+      display: block;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -100 !important;
+    }
+
+    .container {
+      margin: 0;
+      padding: 0;
+      min-width: 100%;
+    }
+  }
+
+  .nav.navbar-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    li {
+      a,
+      &.open a, 
+      &.open a:focus {
+        background-color: transparent; 
+        padding: 0 1em;
+        line-height: 50px;
+        color: rgba($black, .8);
+        
+        &:first-child {
+          padding-left: 3px;
+        }
+      }
+
+      &.active {
+
+        a {
+          background-color: transparent;
+
+          &:hover, &:focus {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  ul.dropdown-menu {
+    box-shadow: none;
+    border-image: url("./border1.png");
+    border-image-slice: 1;
+    border-image-width: 6 6 6 6;
+    border-style: solid;
+
+    background-image: url("./bg-tan.jpg");
+    padding: 15px 0;
+
+    li {
+      opacity: 1;
+      padding: 0 17px;
+      margin: 0;
+
+      a {
+        font-size: 16px;
+        margin: 0;
+        line-height: 38px !important;
+
+        &:first-child {
+          padding-left: 20px;
+        }
+      }
+    }
   }
 }
+
+/////////////////////////////////////////
+
+
 
 .nav .open > a, 
 .nav .open > a:hover, 
@@ -15,29 +162,116 @@
   border-color: transparent;
 }
 
-ul.dropdown-menu {
-  box-shadow: none;
-  border-image: url("./border1.png");
-  border-image-slice: 1;
-  border-image-width: 0 0 6 6;
-  border-style: solid;
+@media (max-width: $xs-max) {
+  .navbar.navbar-default {
+    // border-image: url("./border1.png");
+    // border-image-slice: 1;
+    // border-image-width: 0 0 6 0;
+    // border-style: solid;
+    // height: 56px;
+    // top: 0;
+    // left: 0;
+    // padding-left: 3%;
+    background-color: transparent;
+    // z-index: 99999 !important;
+    // opacity: 1;
 
-  background-image: url("./bg-tan.jpg");
-  top: 50px;
-  right: 0;
+    &:before {
+      // content: " ";
+      // background-image: url("./bg-tan.jpg");
+      // opacity: .85;
+      // display: block;
+      // position: absolute;
+      // top: -5px;
+      // left: 0;
+      // width: 100%;
+      // height: 100%;
+      // z-index: -100 !important;
+    }
 
-
-  li {
-    opacity: 1;
-    padding: 0 25px 17px 25px;
-
-    a {
-      color: $black;
-      font-size: 18px;
-      font-weight: 400;
+    .container {
+      margin: 0;
       padding: 0;
       min-width: 100%;
-      min-height: 100%;
+    }
+  }
+
+
+  .navbar-collapse.collapse.in {
+
+    .nav.navbar-nav {
+      // width: 100%;
+      // margin: 0;
+      // padding: 0;
+
+      li {
+        a,
+        &.open a, 
+        &.open a:focus {
+          background-color: transparent; 
+          padding: 0;
+          // line-height: 40px;
+          color: rgba($black, .8);
+        }
+
+        &.active {
+
+          a {
+            background-color: transparent;
+            color: $red;
+
+            &:hover, &:focus {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    ul.dropdown-menu {
+      // box-shadow: none;
+      // border-image: url("./border1.png");
+      // border-image-slice: 1;
+      // border-image-width: 6 6 6 6;
+      // border-style: solid;
+
+      // background-image: url("./bg-tan.jpg");
+      // padding: 15px 0;
+
+      li {
+        // opacity: 1;
+        // padding: 0 17px;
+        // margin: 0;
+
+        a {
+          // font-size: 16px;
+          // margin: 0;
+          // line-height: 38px !important;
+
+          &:first-child {
+            // padding-left: 20px;
+          }
+        }
+      }
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

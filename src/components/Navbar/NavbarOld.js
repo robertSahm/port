@@ -11,8 +11,8 @@ import styles from './Navbar.scss'
 import Mailto from 'react-mailto'
 
 class Navbar extends Component {
-  constructor(props) {
-    super(props)
+  constructor( props ) {
+    super( props )
 
     this.state = {
       activeTab: 1
@@ -33,19 +33,14 @@ class Navbar extends Component {
       activeTab
     } = this.state
 
+    console.log(this.state.activeTab)
     return (
-      <NavbarBS 
-        fixedTop={true}
-        className={styles.nav_wrap}
-      >
-        <NavbarBS.Header />
-        <NavbarBS.Toggle />
+      <NavbarBS className={styles.nav_wrap}>
+        <NavbarBS.Header>
+          <NavbarBS.Toggle />
+        </NavbarBS.Header>
         <NavbarBS.Collapse>
-          <Nav
-            activeKey={this.state.activeTab} 
-            onSelect={this.handleSelect} 
-            className={styles.nav_nav}
-          >
+          <Nav bsStyle="tabs" activeKey={this.state.activeTab} onSelect={this.handleSelect} className={styles.nav_inner}>
             <IndexLinkContainer to="/">
               <NavItem eventKey={1}>Home</NavItem>
             </IndexLinkContainer>
@@ -65,7 +60,7 @@ class Navbar extends Component {
             </LinkContainer>
             <li className={styles.mailto_wrap}>
               <Mailto email="r@robertsahm.com" obfuscate={true}>
-                Email Me
+                Email me
               </Mailto>
             </li>
             <li className={styles.resume_wrap}>
