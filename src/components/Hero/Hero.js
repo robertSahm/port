@@ -10,9 +10,11 @@ import FireHome from '../FireHome/FireHome'
 class Hero extends Component {
   
   render() {
-    const comp = 1.2
+    
+    const comp = 1.2 
     const minFontSize = 27
-    const maxFontSize = 71
+    const maxFontSize = 86 // for Butler
+    // const maxFontSize = 71 // for Droid Serif
    
     return (
       <div className={styles.hero_wrap}>

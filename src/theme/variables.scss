@@ -1,3 +1,26 @@
+@font-face {
+    font-family: "butlerblack";
+    src: url("Butler_Webfont/butler_black-webfont.woff2") format("woff2"),
+         url("Butler_Webfont/butler_black-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "butlerbold";
+    src: url("Butler_Webfont/butler_bold-webfont.woff2") format("woff2"),
+         url("Butler_Webfont/butler_bold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "butlerextrabold";
+    src: url("Butler_Webfont/butler_extrabold-webfont.woff2") format("woff2"),
+         url("Butler_Webfont/butler_extrabold-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
 
 html, body {
   width: 100%;
@@ -42,19 +65,21 @@ $white:                 rgba(246, 240, 228, 1);
 $alpine_blue:           rgba(57, 66, 81, 1);
 $alpine_white:          rgba(164, 179, 179, 1);
 
-// $font-family-serif:  "Sorts Mill Goudy", Times, serif;
-$font-family-serif:     "Droid Serif", "Times New Roman", Times, serif;
-// $font-family-serif:  "Libre Baskerville", Times, serif;
+// butlerblack
+// butlerbold
+// butlerextrabold
+
+$font-family-serif:     "butlerbold", "Times New Roman", Times, serif;
+// $font-family-serif:     "Droid Serif", "Times New Roman", Times, serif;
 
 $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-// $font-family-sans-serif:  "Droid-Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
-  font-weight: 700;
+  // font-weight: 400;
+  // font-weight: 700;
 }
 
 p {
@@ -118,7 +143,7 @@ $screen-lg:                  1200px;
 $screen-lg-min:              $screen-lg;
 $screen-lg-desktop:          $screen-lg-min;
 
-// So media queries don't overlap when required, provide a maximum
+// So media queries don"t overlap when required, provide a maximum
 $screen-xs-max:              ($screen-sm-min - 1);
 $screen-sm-max:              ($screen-md-min - 1);
 $screen-md-max:              ($screen-lg-min - 1);

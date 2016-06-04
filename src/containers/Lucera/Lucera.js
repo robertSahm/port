@@ -15,9 +15,10 @@ import img9 from './lucera_ss_9.png'
 
 class Lucera extends Component {
   render() {
-    const comp = 1.2
+    const comp = 1.2 
     const minFontSize = 27
-    const maxFontSize = 71 
+    const maxFontSize = 86 // for Butler
+    // const maxFontSize = 71 // for Droid Serif
   
     return (
       <div className={styles.lucera_wrap}>

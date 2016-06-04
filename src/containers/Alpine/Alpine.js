@@ -12,9 +12,10 @@ import img7 from './alpine_ss_7.png'
 
 class Alpine extends Component {
   render() {
-    const comp = 1.2
+    const comp = 1.2 
     const minFontSize = 27
-    const maxFontSize = 71 
+    const maxFontSize = 86 // for Butler
+    // const maxFontSize = 71 // for Droid Serif
   
     return (
       <div className={styles.alpine_wrap}>
