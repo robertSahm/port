@@ -1,8 +1,11 @@
 @import '../../theme/variables.scss';
 
+$click_cover_width: 35%;
+
 .bulb_inner_wrap {
-  height: 100%;
-  width: 35%;
+  width: $click_cover_width;
+  margin: 7% 5%;
+  max-width: 420px;
 }
 
 .bulb {
@@ -12,6 +15,6 @@
 .click2animate {
   z-index: 9999;
   position: absolute;
-  width: 35%;
+  width: $click_cover_width;
   min-height: 100%;
 }

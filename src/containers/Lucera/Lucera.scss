@@ -1,10 +1,12 @@
 @import '../../theme/variables.scss';
 
 .lucera_wrap {
-  background: url('./bg-tan.jpg') repeat;
-  background-size: 400px 1184px;
+  background-color: white;
   width: 100%;
-  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  max-width: 1270px;
+  margin: 0 auto;
 }
 
 .graphic_wrap {
@@ -14,10 +16,8 @@
 
   position: absolute;
   width: 100%;
-  max-width: 1300px;
   height: auto;
-  padding-right: 3%;
-  margin-top: 3%;
+  margin: 4% 12% 0 0;
 }
 
 .hero_lucera_text_wrap {
@@ -25,7 +25,11 @@
   position: relative;
   top: 0;
   left: 0;
-  padding: 7% 3% 2%;
+  padding: 10% 3% 2%;
+
+  h1 {
+    line-height: .9em;
+  }
 }
 
 .lucera_content_wrap {
@@ -39,10 +43,6 @@
   .lucera_headline {
     font-family: $font-family-sans-serif;
     line-height: 1.4em;
-  }
-
-  p {
-
   }
 }
 
@@ -65,15 +65,16 @@
 }
 
 .img_block {
-  margin-top: 4%;
   position: relative;
+  max-width: 1000px;
+  margin: 4% auto;
   padding-bottom: 100px;
 
   .img_row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin-top: 3%;
+    margin-top: 6%;
 
     img {
       height: 0%;

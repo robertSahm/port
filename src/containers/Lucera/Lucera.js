@@ -24,7 +24,6 @@ class Lucera extends Component {
       <div className={styles.lucera_wrap}>
         <Helmet title="Lucera"/>
         
-
         <div className={styles.graphic_wrap}>
           <Bulb />
         </div>

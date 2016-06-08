@@ -1,0 +1,146 @@
+@import '../../theme/variables.scss';
+
+.carol_wrap {
+  background-color: white;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+.hero_carol_text_wrap {
+  min-width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 10% 3% 2%;
+
+  h1 {
+    line-height: .9em;
+  }
+}
+
+.graphic_wrap {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 12% 0 0 0;
+  min-width: 1250px;
+
+  .image_1 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1500px) { // 1400 down
+  .graphic_wrap {
+
+    .image_1 {
+    }
+  }
+}
+
+.text_block {
+  padding: 0 3%;
+  width: 45%;
+  z-index: 100;
+  position: relative;
+
+  .carol_headline {
+    font-family: $font-family-sans-serif;
+    line-height: 1.4em;
+  }
+}
+
+@media (max-width: $xs-max) { // phone
+  .text_block {
+    width: 100%;
+  }
+}
+
+@media (min-width: $sm-min) { // ipad
+  .text_block {
+    width: 65%;
+  }
+}
+
+@media (min-width: $lg-min) { // laptop
+  .text_block {
+    width: 45%;
+  }
+}
+
+.img_block {
+  margin-top: 6%;
+  position: relative;
+  padding-bottom: 100px;
+
+  .img_row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 5%;
+    padding: 0 3%;
+    height: auto;
+
+    img {
+      height: 0%;
+      align-self: flex-start;
+      padding: 0;
+  
+      &:first-child {
+        padding-right: 0;
+      }
+    }
+
+    .image_2 { width: 100%; max-width: 1000px; }
+    .image_3 { width: 100%; max-width: 700px; }
+    .image_4 { width: 100%; max-width: 1000px; }
+    .image_5 { width: 100%; max-width: 1200px; }
+  }
+}
+
+@media (max-width: $xs-max) { // Phone
+
+  .graphic_wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+
+    position: absolute;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+  }
+
+  .hero_carol_text_wrap {
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 20% 3% 2%;
+  }
+
+  .img_row {
+    flex-flow: column wrap;
+
+    img {
+      flex: 1 1 50%;
+      margin: 0 auto;
+    }
+
+    .image_2 { width: 100%; }
+    .image_3 { width: 100%; }
+    .image_4 { width: 100%; }
+    .image_5 { width: 100%; }
+  }
+}
+
+
+

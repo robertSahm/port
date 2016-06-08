@@ -15,7 +15,7 @@
     flex: 1;
     width: 100%;
     padding-left: 3%;
-    margin-top: -10%;
+    margin-top: -18%;
   }
   
   .graphic_wrap {
@@ -29,12 +29,12 @@
     height: inherit;
     width: 120%;
   }
-
-  @media (max-width: $xs-max) { // 415 and down
+  
+  @media (max-width: $xs-max) { // 0 - 415
     display: block;
 
     .hero_text_wrap {
-      margin-top: 12% !important;
+      margin-top: 25%;
 
       h1 {
         line-height: .85em;
@@ -46,23 +46,15 @@
       top: 13%;
     }
   }
-  
-  @media (min-width: $xs-min) and (max-width: $xs-max) { // 415 and 768
-    display: block;
 
+  @media (min-width: $sm-min) and (max-width: $sm-max) { // 416 - 768
     .hero_text_wrap {
-      margin-top: 7% !important;
+      margin-top: -73%;
     }
 
     .graphic_wrap {
-      width: 180%;
-      top: 13%;
-    }
-  }
-
-  @media (min-width: $md-min) {
-    .hero_text_wrap {
-      
+      width: 170%;
+      top: 10%;
     }
   }
 }

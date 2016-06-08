@@ -39,18 +39,9 @@ html, body {
   width: 100%;
 }
 
-// @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic);
-// == Colors
-
-// ## Gray and brand colors for use across Bootstrap.
-
-// $gray-base:             rgba(8, 20, 42, 1);
-// $gray-darker:           lighten($gray-base, 13.5%); // #222
-// $gray-dark:             lighten($gray-base, 20%);   // #333
-// $gray:                  lighten($gray-base, 33.5%); // #555
-// $gray-light:            #4E5D6C;   // #999
-// $gray-lighter:          #EBEBEB; // #eee
-
+/////////////////////////////
+// Colors
+//////////////////////////////
 $brand-primary:         #DF691A;
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
@@ -69,7 +60,7 @@ $alpine_white:          rgba(164, 179, 179, 1);
 // butlerbold
 // butlerextrabold
 
-$font-family-serif:     "butlerbold", "Times New Roman", Times, serif;
+$font-family-serif:       "butlerbold", "Times New Roman", Times, serif;
 // $font-family-serif:     "Droid Serif", "Times New Roman", Times, serif;
 
 $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -85,14 +76,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-family: $font-family-sans-serif;
   font-size: 1.1em;
-
-  &.large {
-
-  }
-
-  &.small {
-
-  }
 }
 
 .text_pink { color: $pink; }
@@ -107,15 +90,12 @@ p {
 // iphone 6s
 $xs-min: 0px;
 $xs-max: 415px;
-
 // ipad
 $sm-min: 416px; 
 $sm-max: 768px; 
-
 // laptop
 $md-min: 769px; 
 $md-max: 1024px;
-
 // desktop
 $lg-min: 1025px;
 $lg-max: 7000px; 
@@ -166,83 +146,15 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
 /////////////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
-
-
-//////////////////////////
-
-
-////////////////////////
-
 // // Navbar
-$navbar-height:                               50px;
-$navbar-padding-horizontal:                   0;
+$navbar-height:                    50px;
+$navbar-padding-horizontal:        0;
 
-$navbar-color:                        $black;
-$navbar-bg:                           transparent;
-$navbar-border:                       transparent;
+$navbar-color:                     $black;
+$navbar-bg:                        transparent;
+$navbar-border:                    transparent;
+$navbar-collapse-max-height:       380px !default;
 
 // // Navbar links
 $navbar-link-color:                $black;
 $navbar-link-hover-color:          $pink;
-// $navbar-link-hover-bg:             transparent;
-// $navbar-link-active-color:         $red; // Active tab
-// $navbar-link-active-bg:            transparent;
-// $navbar-link-disabled-color:       #ccc;
-// $navbar-link-disabled-bg:          transparent;
-
-// // Navbar toggle
-// $navbar-toggle-hover-bg:           $red;
-// $navbar-toggle-icon-bar-bg:        $black;
-// $navbar-toggle-border-color:       green;
-
-
-// //== Navs
-// $nav-link-padding:                          auto;
-// $nav-link-hover-bg:                         transparent;
-
-// $nav-disabled-link-color:                   transparent;
-// $nav-disabled-link-hover-color:             $red;
-
-// //== Tabs
-// $nav-tabs-border-color:                     transparent;
-
-// $nav-tabs-link-hover-border-color:          transparent;
-
-// $nav-tabs-active-link-hover-bg:             transparent;
-// $nav-tabs-active-link-hover-color:          transparent;
-// $nav-tabs-active-link-hover-border-color:   transparent;
-
-// $nav-tabs-justified-link-border-color:            transparent;
-// $nav-tabs-justified-active-link-border-color:     $red;
-
-// //== Pills
-// $nav-pills-border-radius:                   0;
-// $nav-pills-active-link-hover-bg:            green;
-// $nav-pills-active-link-hover-color:         blue;
-
-
-
-// //== Dropdowns
-// $dropdown-bg:                    transparent;
-// $dropdown-border:                transparent;
-// //** Dropdown menu `border-color` **for IE8**.
-// $dropdown-fallback-border:       transparent;
-// $dropdown-divider-bg:            $red;
-
-// //** Dropdown link text color.
-// $dropdown-link-color:            $black;
-// $dropdown-link-hover-color:      $red;
-// $dropdown-link-hover-bg:         transparent;
-
-// $dropdown-link-active-color:     $red;
-// $dropdown-link-active-bg:        transparent;
-
-// $dropdown-header-color:          blue;
-
-// $dropdown-caret-color:           $red;
