@@ -39,10 +39,10 @@ class Alpine extends Component {
         <div className={styles.alpine_content_wrap}>
           <div className={styles.text_block}>
             <h4 className={styles.alpine_headline}>
-              Alpine Labs is a boutique video production company. My responsibilities included:
+              Alpine Labs is a boutique video production company based out of West Hollywood, CA. They needed a solution to host and serve their own videos while adhering to a strict design aesthetic. My responsibilities included implimenting static concept art into animated, interactive realities using HTML, JS and Ruby.
             </h4>
-            <p>Impliment static concept art into animated, interactive realities</p>
-            <p>SmartOS, JavaScript, React.js, Sass, D3.js, Sass</p>
+            
+            
           </div>
           <div className={styles.img_block}>
             <div className={styles.img_row}>

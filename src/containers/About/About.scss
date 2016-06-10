@@ -14,12 +14,16 @@
 .hero_about_text_wrap {
   min-width: 100%;
   position: relative;
-  top: 0;
+  margin: 7% 0 3% 0;
   left: 0;
+
+  h1 {
+    line-height: .2em;
+  }
 }
 
 .about_content_wrap {
-  
+  width: 50%;
 }
 
 .graphic_wrap {
