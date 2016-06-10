@@ -40,12 +40,10 @@ class Carol extends Component {
         <div className={styles.carol_content_wrap}>
           <div className={styles.text_block}>
             <h4 className={styles.carol_headline}>
-              Carol’s SaaS (sofware as a service) provides a complete computing and networking infrastructure, tuned for the low-latency demands of high frequency currency trading. During my 2 years as a front-end engineer and designer, my responsibilities included:
+              Carol Beehler is a world-renowned graphic designer based out of Washington D. C.. She's designed books and other materials for various Smithsonian Institutions, the National Gallery of Art and the National Park Service among other high-profile clients. Working together on pixel-perfect typography and precise layout measurements yeilded a site 
             </h4>
-            <p>- Design and code UI's for traders and engineers</p>
-            <p>- Create internal and public-facing style guides</p>
-            <p>- Design and code branding and marketing materials including main marketing site Carol.com</p>
-            <p>- SmartOS, JavaScript, React.js, Sass, D3.js, Sass</p>
+            <p>- </p>
+            
           </div>
 
           <div className={styles.img_block}>
