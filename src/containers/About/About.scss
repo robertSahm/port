@@ -9,21 +9,28 @@
   width: 100%;
   height: 100%;
   padding: 8% 3%;
+  overflow-x: hidden;
 }
 
 .hero_about_text_wrap {
   min-width: 100%;
   position: relative;
-  margin: 7% 0 3% 0;
+  padding: 6% 0 0 0;
   left: 0;
 
   h1 {
-    line-height: .2em;
+    line-height: .9em !important;
   }
 }
 
 .about_content_wrap {
   width: 50%;
+  z-index: 9999;
+
+  h3 {
+    line-height: 1.3em;
+    padding: 1% 0;
+  }
 }
 
 .graphic_wrap {
@@ -35,37 +42,18 @@
   right: 0;
   height: inherit;
   width: 120%;
-  overflow: hidden;
 }
 
+ul.list_border {
+  border-left: 7px solid $red;
+  margin-top: 12px;
+  padding-left: 29px;
+  list-style-type: circle;
 
-.hero_about_text_wrap {
-  h1 {
-    line-height: 1em;
-
-    &.text_pink {
-      color: $pink;
-    }
-
-    &.text_red {
-      color: $red;
-    }
-
-    &.text_yellow {
-      color: $yellow;
-    }
-
-    &.text_black {
-      color: $black;
-    }
-  }
-
-  p {
-    margin-top: 4%;
-    font-weight: 400;
-    color: rgba($black, .4);
-    font-style: italic;
-    font-family: $font-family-serif;
+  li {
+    padding: 5px 0;
+    font-weight: bold;
   }
 }
+
 

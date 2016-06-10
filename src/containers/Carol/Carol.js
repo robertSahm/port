@@ -40,7 +40,7 @@ class Carol extends Component {
         <div className={styles.carol_content_wrap}>
           <div className={styles.text_block}>
             <h4 className={styles.carol_headline}>
-              Carol Beehler is a world-renowned graphic designer based out of Washington D. C.. Clients she's designed materials for include various Smithsonian Institutions, the National Gallery of Art and the National Park Service. Working together on pixel-perfect typography and precise layouts yeilded her first web portfolio worthy of the content (works?) displayed.
+              Carol Beehler is a world-renowned graphic designer based out of Washington D. C.. Clients she's designed materials for include various Smithsonian Institutions, the National Gallery of Art and the National Park Service. Working together on pixel-perfect typography and attentiont to detail yeilded her first web portfolio worthy of the content (works?) displayed.
             </h4>
           </div>
 

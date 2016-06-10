@@ -45,10 +45,12 @@ class Lucera extends Component {
             <h4 className={styles.lucera_headline}>
               Lucera’s SaaS (sofware as a service) provides a complete computing and networking infrastructure, tuned for the low-latency demands of high frequency currency trading. During my 2 years as a front-end engineer and designer, my responsibilities included:
             </h4>
-            <p>- Design and code UI's for traders and engineers</p>
-            <p>- Create internal and public-facing style guides</p>
-            <p>- Design and code branding and marketing materials including main marketing site Lucera.com</p>
-            <p>- SmartOS, JavaScript, React.js, Sass, D3.js, Sass</p>
+            <div className={styles.list_border}>
+              <p>- React.js, JavaScript, SmartOS, Webpack/Growl, Sass, D3.js</p>
+              <p>- Design and code UI's for traders and engineers</p>
+              <p>- Create internal and public-facing style guides</p>
+              <p>- Design and code branding and marketing materials including main marketing site Lucera.com</p>
+            </div>
           </div>
 
           <div className={styles.img_block}>
