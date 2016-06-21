@@ -46,7 +46,7 @@ class Lucera extends Component {
               Lucera’s SaaS (sofware as a service) provides a complete computing and networking infrastructure, tuned for the low-latency demands of high frequency currency trading. During my 2 years as a front-end engineer and designer, my responsibilities included:
             </h4>
             <div className={styles.list_border}>
-              <p>- React.js, JavaScript, SmartOS, Webpack/Growl, Sass, D3.js</p>
+              <p>- JavaScript, React, Backbone, SmartOS, Webpack/Growl, Sass, D3</p>
               <p>- Design and code UI's for traders and engineers</p>
               <p>- Create internal and public-facing style guides</p>
               <p>- Design and code branding and marketing materials including main marketing site Lucera.com</p>

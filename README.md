@@ -2,6 +2,7 @@
 
 ## About
 
+* Thanks to the team over at [React Redux Universal Hot Example](https://github.com/erikras/react-redux-universal-hot-example) 
 * ~~Isomorphic~~ [Universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) rendering
 * Both client and server make calls to load data from separate API server
 * [React](https://github.com/facebook/react)
@@ -63,9 +64,6 @@ To get this project to work on Heroku, you need to:
 4. `heroku config:set NPM_CONFIG_PRODUCTION=false`
   * This is to enable webpack to run the build on deploy.
 
-The first deploy might take a while, but after that the `node_modules` dir should be cached.
 
-
-Thanks for checking this out.
 
 – RS
