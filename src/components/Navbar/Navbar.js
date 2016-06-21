@@ -15,7 +15,8 @@ class Navbar extends Component {
     super(props)
 
     this.state = {
-      activeTab: 1
+      activeTab: 1,
+      expanded: false
     }
   }
 
@@ -30,21 +31,25 @@ class Navbar extends Component {
 
   render() {
     const {
-      activeTab
+      activeTab,
+      expanded
     } = this.state
 
     return (
       <NavbarBS 
         fixedTop={true}
         className={styles.nav_wrap}
+        expanded={this.state.expanded}
+        onToggle={expanded => this.setState({ expanded })}
       >
         <NavbarBS.Header />
-        <NavbarBS.Toggle />
-        <NavbarBS.Collapse>
+        <NavbarBS.Toggle/>
+        <NavbarBS.Collapse >
           <Nav
             activeKey={this.state.activeTab} 
             onSelect={this.handleSelect} 
             className={styles.nav_nav}
+            onSelect={() => this.setState({ expanded: false })}
           >
             <IndexLinkContainer to="/">
               <NavItem eventKey={1}>Home</NavItem>
@@ -71,6 +76,11 @@ class Navbar extends Component {
             <li className={styles.resume_wrap}>
               <a href="/resume">Resume</a>
             </li>
+
+            <li className="git_link pull-right">
+              <a href="https://github.com/robertSahm" target="_blank" className="fa fa-github"></a>
+            </li>
+
           </Nav>
         </NavbarBS.Collapse>
       </NavbarBS>

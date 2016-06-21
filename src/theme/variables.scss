@@ -154,8 +154,13 @@ $navbar-padding-horizontal:        0;
 $navbar-color:                     $black;
 $navbar-bg:                        transparent;
 $navbar-border:                    transparent;
-$navbar-collapse-max-height:       380px !default;
+$navbar-collapse-max-height:       400px;
 
 // // Navbar links
 $navbar-link-color:                $black;
 $navbar-link-hover-color:          $pink;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           $yellow;
+$navbar-default-toggle-icon-bar-bg:        $red;
+
