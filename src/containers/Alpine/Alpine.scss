@@ -104,16 +104,16 @@
 .img_block {
   margin: 4% 0;
   position: relative;
-  padding-bottom: 100px;
   width: 100%;
 
   .img_row {
     display: flex;
-    flex-direction: column wrap;
-    justify-content: space-around;
+    flex-direction: row wrap;
+    justify-content: center;
 
     margin: 5% 0;
     padding: 0 3%;
+    width: 100%;
     max-width: 100%;
 
     img {
@@ -131,8 +131,8 @@
     .image_3 {  }
     .image_4 { max-width: 1040px; }
     .image_5 {  }
-    .image_6 { flex: 2 1 50px }
-    .image_7 { flex: 1 1 50px }
+    .image_6 { flex: 2; min-width: 50px; }
+    .image_7 { flex: 1; min-width: 50px; }
   }
 }
 

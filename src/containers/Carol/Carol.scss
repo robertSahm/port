@@ -23,15 +23,15 @@
 }
 
 .graphic_wrap {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
+  // display: flex;
+  // flex-flow: column;
+  // align-items: flex-end;
 
   position: absolute;
   width: 100%;
-  height: auto;
-  padding: 12% 0 0 0;
-  min-width: 1250px;
+  // height: auto;
+  // padding: 12% 0 0 0;
+  // min-width: 1250px;
 
   .image_1 {
     width: 50%;
@@ -39,11 +39,7 @@
 }
 
 @media (max-width: 1500px) { // 1400 down
-  .graphic_wrap {
 
-    .image_1 {
-    }
-  }
 }
 
 .text_block {
