@@ -4,14 +4,14 @@ import ReactFitText from 'react-fittext'
 import styles from './Lucera.scss'
 import Bulb from '../../components/Bulb/Bulb'
 import img1 from './lucera_ss_1.png'
-import img2 from './lucera_ss_2.png'
+import img2 from './lucera_ss_2.jpg'
 import img3 from './lucera_ss_3.png'
 import img4 from './lucera_ss_4.png'
 import img5 from './lucera_ss_5.png'
 import img6 from './lucera_ss_6.png'
 import img7 from './lucera_ss_7.png'
-import img8 from './lucera_ss_8.png'
-import img9 from './lucera_ss_9.png'
+import img8 from './lucera_ss_8.jpg'
+import img9 from './lucera_ss_9.jpg'
 
 class Lucera extends Component {
   render() {

@@ -42,7 +42,8 @@ class Fire extends Component {
     } = this.state
 
     return (
-      <div className={styles.fire_inner_wrap}>
+    <div className={styles.graphic_wrap}>
+
         <MtSvgLines
           className={styles.fire_color}
           animate={triggerLineAnim}
@@ -52,7 +53,12 @@ class Fire extends Component {
           timing={'ease-in-out'}
           wait={1000}
         >
-          <svg viewBox="0 0 690 591" version="1.1">
+          <svg 
+            version="1.1"
+            preserveAspectRatio="xMinYMin meet" 
+            viewBox="0 0 690 591" 
+
+          >
               <g id="Home" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                   <g id="-" transform="translate(-506.000000, -54.000000)">
                       <g id="fireColor" transform="translate(506.000000, 54.000000)">
@@ -79,7 +85,12 @@ class Fire extends Component {
           stagger={100}
         >
           {this.renderTrigger('triggerLineAnim')}
-          <svg viewBox="0 0 690 591" version="1.1">
+          <svg 
+            version="1.1"
+            preserveAspectRatio="xMinYMin meet" 
+            viewBox="0 0 690 591" 
+   
+          >
             <title>fireLines</title>
             <g id="SVG-Chopper" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" opacity="0.4">
               <g id="-" transform="translate(-235.000000, -197.000000)" stroke="#08142a" strokeWidth="2">
@@ -98,7 +109,8 @@ class Fire extends Component {
             </g>
           </svg>
         </MtSvgLines>
-      </div>
+
+    </div>
     )
   }
 }

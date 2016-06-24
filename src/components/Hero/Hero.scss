@@ -18,18 +18,6 @@
     margin-top: -18%;
   }
   
-  .graphic_wrap {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: inherit;
-    width: 120%;
-  }
-  
   @media (max-width: $xs-max) { // 0 - 415
     display: block;
 
@@ -40,21 +28,11 @@
         line-height: .85em;
       }
     }
-
-    .graphic_wrap {
-      width: 190%;
-      top: 13%;
-    }
   }
 
   @media (min-width: $sm-min) and (max-width: $sm-max) { // 416 - 768
     .hero_text_wrap {
       margin-top: -73%;
-    }
-
-    .graphic_wrap {
-      width: 170%;
-      top: 10%;
     }
   }
 }

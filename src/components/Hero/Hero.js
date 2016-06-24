@@ -34,9 +34,7 @@ class Hero extends Component {
           </ReactFitText>
         </div>
 
-        <div className={styles.graphic_wrap}>
-          <FireHome />
-        </div>
+        <FireHome />
 
       </div>
     )

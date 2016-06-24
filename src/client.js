@@ -70,10 +70,10 @@ if (__DEVTOOLS__ && !window.devToolsExtension) {
   const DevTools = require('./containers/DevTools/DevTools')
   ReactDOM.render(
     <Provider store={store} key="provider">
-      <div>
+{/*      <div>
         {component}
         <DevTools />
-      </div>
+      </div>*/}
     </Provider>,
     dest
   )

@@ -1,106 +1,176 @@
 @import '../../theme/variables.scss';
 
-.nav_bumper {
-  height: $navbar-height;
+.alpine_bg {
   width: 100%;
-  background-color: $white;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: $alpine_blue;
+  padding-top: 55px;
+  padding-left: 3%;
+  margin: 0;
 }
 
 .alpine_wrap {
-  background-color: $alpine_blue;
-  background-size: 400px 1184px;
-  position: absolute;
-  // top: $navbar-height;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-}
-
-.graphic_wrap_alpine {
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-end;
-
-  position: absolute;
-  width: 100%;
-
-  img.img_hero_alpine {
-    position: relative;
-    width: 50%;
-    padding-top: 7%;
-    right: 0;
-    align-self: flex-end;
-  }
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .hero_alpine_text_wrap {
-  min-width: 100%;
   position: relative;
   top: 0;
   left: 0;
-  padding: 7% 3% 1%;
+  padding: 10% 3% 3%;
+
+  h1 {
+    line-height: .9em;
+  }
 }
 
-.alpine_content_wrap {
+.graphic_wrap {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 8% 0 0 0;
+}
+
+//////////////////////////////////////
+// Content
+
+.text_block {
   padding: 0 3%;
+  z-index: 100;
+  position: relative;
+  color: $white;
+
+  .alpine_headline {
+    font-family: $font-family-sans-serif;
+    line-height: 1.6em;
+  }
+}
+
+@media (max-width: $xs-max) { // phone
+  .alpine_bg {
+    padding: 0 3%;
+  }
 
   .text_block {
-    width: 50%;
-
-    .alpine_headline {
-      font-family: $font-family-sans-serif;
-      line-height: 1.4em;
-      color: $yellow;
-      margin-bottom: 20px;
-    }
-
-    p {
-      color: $alpine_white;
-      border-left: 3px solid $yellow;
-      margin-bottom: 0;
-      padding-left: 14px;
-      line-height: 2.1em;
-    }
+    width: 100%;
   }
 
-  .img_block {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-top: 4%;
-  
-    .img_row {
-      display: flex;
-      flex-flow: row;
-      justify-content: space-around;
-      align-items: center;
-      margin: 5% 0 5% 0;
-      padding: 0 5%;
-      min-width: 0;
-      height: auto;
+  .image_1 {
+    width: 60%;
+    margin: 6% 6% 0 0;
+  }
 
-      img {
-        flex-shrink: 1;
-        align-self: flex-start;
-        max-width: 100%;
-        height: auto;
+  .image_6 {  }
+  .image_7 {  }
+}
 
-        &:first-child {
-          padding: 0 5% 0 0;
-        }
-        &:last-child {
-          padding: 0 0 0 0;
-        }
-      }
-    }
+@media (min-width: $sm-min) and (max-width: $md-max) { // tablet
+  .text_block {
+    
+  }
 
-    .img_row_compress {
-      @extend .img_row;
+  .image_1 {
+    width: 50%;
+    margin-right: 12%;
+  }
 
-      img {
-        margin: 0 15%;
-      }
-    }
+  .alpine_bg {
+    padding-left: 0;
   }
 }
+
+@media (min-width: $lg-min) { // laptop and up
+  .alpine_wrap {
+    border-left: 5px solid $yellow;
+  }
+
+  .text_block {
+    width: 35%;
+  }
+
+  .image_1 {
+    width: 65%;
+  }
+}
+
+.img_block {
+  margin: 4% 0;
+  position: relative;
+  padding-bottom: 100px;
+  width: 100%;
+
+  .img_row {
+    display: flex;
+    flex-direction: column wrap;
+    justify-content: space-around;
+
+    margin: 5% 0;
+    padding: 0 3%;
+    max-width: 100%;
+
+    img {
+      flex: 1 1 auto;
+      height: 100%;
+      width: 100%;
+      align-self: center;
+      
+      &:first-child {
+        padding-right: 0;
+      }
+    }
+
+    .image_2 { max-width: 1040px; }
+    .image_3 {  }
+    .image_4 { max-width: 1040px; }
+    .image_5 {  }
+    .image_6 { flex: 2 1 50px }
+    .image_7 { flex: 1 1 50px }
+  }
+}
+
+// @media (max-width: $xs-max) { // Phone
+
+//   .graphic_wrap {
+//     display: flex;
+//     flex-flow: column;
+//     align-items: flex-end;
+
+//     position: absolute;
+//     width: 100%;
+//     max-width: 1300px;
+//     height: auto;
+//   }
+
+//   .hero_alpine_text_wrap {
+//     min-width: 100%;
+//     position: relative;
+//     top: 0;
+//     left: 0;
+//     padding: 20% 3% 2%;
+//   }
+
+//   .img_row {
+//     flex-flow: column wrap;
+
+//     img {
+//       flex: 1 1 50%;
+//       margin: 0 auto;
+//     }
+
+//     .image_2 { width: 100%; }
+//     .image_3 { width: 100%; }
+//     .image_4 { width: 100%; }
+//     .image_5 { width: 100%; }
+//   }
+// }
+
 
 
