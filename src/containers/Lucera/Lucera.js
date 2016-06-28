@@ -47,9 +47,9 @@ class Lucera extends Component {
             </h4>
             <div className={styles.list_border}>
               <p>- JavaScript, React, Backbone, SmartOS, Webpack/Growl, Sass, D3</p>
-              <p>- Design and code UI's for traders and engineers</p>
-              <p>- Create internal and public-facing style guides</p>
-              <p>- Design and code branding and marketing materials including main marketing site Lucera.com</p>
+              <p>- Designing and coding UI's for traders and engineers</p>
+              <p>- Creating internal and public-facing style guides</p>
+              <p>- Designing and coding branding and marketing materials including main marketing site Lucera.com</p>
             </div>
           </div>
 

@@ -89,7 +89,6 @@ class Fire extends Component {
             version="1.1"
             preserveAspectRatio="xMinYMin meet" 
             viewBox="0 0 690 591" 
-   
           >
             <title>fireLines</title>
             <g id="SVG-Chopper" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" opacity="0.4">

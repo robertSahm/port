@@ -1,17 +1,13 @@
 @import '../../theme/variables.scss';
 
 .carol_wrap {
-  background-color: white;
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
+  padding-top: 2%;
   position: relative;
-  max-width: 1470px;
-  margin: 6% auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .hero_carol_text_wrap {
-  min-width: 100%;
   position: relative;
   top: 0;
   left: 0;
@@ -23,120 +19,125 @@
 }
 
 .graphic_wrap {
-  // display: flex;
-  // flex-flow: column;
-  // align-items: flex-end;
-
   position: absolute;
   width: 100%;
-  // height: auto;
-  // padding: 12% 0 0 0;
-  // min-width: 1250px;
-
-  .image_1 {
-    width: 50%;
-  }
+  height: auto;
+  padding: 0;
 }
 
-@media (max-width: 1500px) { // 1400 down
-
-}
+//////////////////////////////////////
+// Content
 
 .text_block {
   padding: 0 3%;
-  width: 45%;
   z-index: 100;
   position: relative;
+  color: $black;
+  opacity: .7;
 
   .carol_headline {
     font-family: $font-family-sans-serif;
-    line-height: 1.4em;
+    line-height: 1.6em;
   }
 }
+
+///////////////////////////////////
+// Media Queries
 
 @media (max-width: $xs-max) { // phone
+  .carol_bg {
+    padding: 0 3%;
+  }
+
+  .hero_carol_text_wrap {
+   padding-top: 0;
+
+    h1 {
+      line-height: .5em;
+    }
+  }
+
   .text_block {
     width: 100%;
+    padding-top: 50%;
+  }
+
+  .image_1 {
+    width: 90%;
+    padding: 0 5%;
+    margin: 26% auto;
+    left: 0;
   }
 }
 
-@media (min-width: $sm-min) { // ipad
+@media (min-width: $sm-min) and (max-width: $md-max) { // tablet
+  .carol_wrap {
+    padding-top: 10%;
+  }
+
   .text_block {
-    width: 65%;
+     margin-top: 10%;
+  }
+
+  .image_1 {
+    width: 52%;
+    padding: 5% 4% 0 0;
+    margin: 0 0 0 0;
+    float: right;
   }
 }
 
-@media (min-width: $lg-min) { // laptop
+@media (min-width: $lg-min) { // laptop and up
+  .carol_wrap {
+    border-left: 5px solid $black;
+  }
+
   .text_block {
-    width: 45%;
+    width: 40%;
+
+  }
+
+  .image_1 {
+    width: 58%;
+    padding: 10% 1% 0 0;
+    float: right;
   }
 }
+
+// End Responsive
+//////////////////////////////////////////
 
 .img_block {
-  margin-top: 6%;
+  margin: 4% 0;
   position: relative;
-  padding-bottom: 100px;
+  width: 100%;
 
   .img_row {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 5%;
+    flex-direction: row wrap;
+    justify-content: center;
+
+    margin: 10% 0;
     padding: 0 3%;
-    height: auto;
+    width: 100%;
+    max-width: 100%;
 
     img {
-      height: 0%;
-      align-self: flex-start;
-      padding: 0;
-  
+      flex: 1 1 auto;
+      height: 100%;
+      width: 100%;
+      align-self: center;
+      
       &:first-child {
         padding-right: 0;
       }
     }
 
-    .image_2 { width: 100%; max-width: 1000px; }
-    .image_3 { width: 100%; max-width: 700px; }
-    .image_4 { width: 100%; max-width: 1000px; }
-    .image_5 { width: 100%; max-width: 1200px; }
+    .image_2 { max-width: 1040px; }
+    .image_3 {  }
+    .image_4 { max-width: 1040px; }
+    .image_5 {  }
+    .image_6 { flex: 2; min-width: 50px; }
+    .image_7 { flex: 1; min-width: 50px; }
   }
 }
-
-@media (max-width: $xs-max) { // Phone
-
-  .graphic_wrap {
-    display: flex;
-    flex-flow: column;
-    align-items: flex-end;
-
-    position: absolute;
-    width: 100%;
-    max-width: 1300px;
-    height: auto;
-  }
-
-  .hero_carol_text_wrap {
-    min-width: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
-    padding: 20% 3% 2%;
-  }
-
-  .img_row {
-    flex-flow: column wrap;
-
-    img {
-      flex: 1 1 50%;
-      margin: 0 auto;
-    }
-
-    .image_2 { width: 100%; }
-    .image_3 { width: 100%; }
-    .image_4 { width: 100%; }
-    .image_5 { width: 100%; }
-  }
-}
-
-
-

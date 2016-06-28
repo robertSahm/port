@@ -2,15 +2,15 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import ReactFitText from 'react-fittext'
 import styles from './Carol.scss'
-import img1 from './carol_ss_1.jpg'
+import img1 from './carol_ss_3.jpg'
 import img2 from './carol_ss_2.jpg'
-import img3 from './carol_ss_3.jpg'
+import img3 from './carol_ss_3.png'
 import img4 from './carol_ss_4.jpg'
 import img5 from './carol_ss_5.jpg'
 
 class Carol extends Component {
   render() {
-    const comp = 1.2 
+    const comp = 1.9 
     const minFontSize = 27
     const maxFontSize = 80 // for Butler
     // const maxFontSize = 71 // for Droid Serif
@@ -40,7 +40,7 @@ class Carol extends Component {
         <div className={styles.carol_content_wrap}>
           <div className={styles.text_block}>
             <h4 className={styles.carol_headline}>
-              Carol Beehler is a world-renowned graphic designer based out of Washington D. C.. Clients she's designed materials for include various Smithsonian Institutions, the National Gallery of Art and the National Park Service. Working together on pixel-perfect typography and attentiont to detail yeilded her first web portfolio worthy of the content (works?) displayed.
+              Carol Beehler is a world-renowned graphic designer based out of Washington D. C.. Her clients include various Smithsonian Institutions, the National Gallery of Art and the National Park Service. Working together on pixel-perfect typography and attentiont to detail yeilded her first web portfolio worthy of the works displayed.
             </h4>
           </div>
 
