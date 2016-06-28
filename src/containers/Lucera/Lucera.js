@@ -3,6 +3,9 @@ import Helmet from 'react-helmet'
 import ReactFitText from 'react-fittext'
 import styles from './Lucera.scss'
 import Bulb from '../../components/Bulb/Bulb'
+import Button from 'react-bootstrap/lib/Button';
+import ButtonToolbar from 'react-bootstrap/lib/ButtonToolbar';
+import { LinkContainer } from 'react-router-bootstrap'
 import img1 from './lucera_ss_1.png'
 import img2 from './lucera_ss_2.jpg'
 import img3 from './lucera_ss_3.png'
@@ -74,6 +77,12 @@ class Lucera extends Component {
               <img src={img9} className={styles.image_9}/>
             </div>
           </div>
+
+          <LinkContainer to="/alpine">
+            <ButtonToolbar className={styles.btn_wrap}>
+              <Button className={styles.btn_center}>Next Project <i className="fa fa-chevron-right" /></Button>
+            </ButtonToolbar>
+          </LinkContainer>
 
         </div>
       </div>

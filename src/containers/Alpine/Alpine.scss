@@ -136,41 +136,28 @@
   }
 }
 
-// @media (max-width: $xs-max) { // Phone
+.btn_wrap {
+  padding-top: 4%;
+  padding-bottom: 9%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-//   .graphic_wrap {
-//     display: flex;
-//     flex-flow: column;
-//     align-items: flex-end;
+  .btn_group_center {
 
-//     position: absolute;
-//     width: 100%;
-//     max-width: 1300px;
-//     height: auto;
-//   }
+    a {
+      background: $pink;
+      color: $black;
+      padding: 10px 15px;
 
-//   .hero_alpine_text_wrap {
-//     min-width: 100%;
-//     position: relative;
-//     top: 0;
-//     left: 0;
-//     padding: 20% 3% 2%;
-//   }
+      i {
+        position: relative;
+        top: 1px;
+      }
+    }
 
-//   .img_row {
-//     flex-flow: column wrap;
-
-//     img {
-//       flex: 1 1 50%;
-//       margin: 0 auto;
-//     }
-
-//     .image_2 { width: 100%; }
-//     .image_3 { width: 100%; }
-//     .image_4 { width: 100%; }
-//     .image_5 { width: 100%; }
-//   }
-// }
+  }
+}
 
 
 

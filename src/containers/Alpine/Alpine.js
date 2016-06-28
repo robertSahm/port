@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import ReactFitText from 'react-fittext'
 import styles from './Alpine.scss'
+import Button from 'react-bootstrap/lib/Button';
+import ButtonToolbar from 'react-bootstrap/lib/ButtonToolbar';
+import ButtonGroup from 'react-bootstrap/lib/ButtonGroup';
+import { LinkContainer } from 'react-router-bootstrap'
 import img1 from './alpine_ss_1.png'
 import img2 from './alpine_ss_2.png'
 import img3 from './alpine_ss_3.png'
@@ -68,6 +72,17 @@ class Alpine extends Component {
                 <img src={img7} className={styles.image_7} />
               </div>
             </div>
+
+            <ButtonToolbar className={styles.btn_wrap}>
+              <ButtonGroup className={styles.btn_group_center}>
+                <LinkContainer to="/lucera">
+                  <Button><i className="fa fa-chevron-left" /> Last</Button>
+                </LinkContainer>
+                <LinkContainer to="/carol">
+                  <Button>Next <i className="fa fa-chevron-right" /></Button>
+                </LinkContainer>
+              </ButtonGroup>
+            </ButtonToolbar>
 
           </div>
         </div>

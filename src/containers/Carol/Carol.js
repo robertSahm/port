@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import ReactFitText from 'react-fittext'
 import styles from './Carol.scss'
+import Button from 'react-bootstrap/lib/Button';
+import ButtonToolbar from 'react-bootstrap/lib/ButtonToolbar';
+import { LinkContainer } from 'react-router-bootstrap'
 import img1 from './carol_ss_3.jpg'
 import img2 from './carol_ss_2.jpg'
 import img3 from './carol_ss_3.png'
@@ -58,6 +61,12 @@ class Carol extends Component {
               <img src={img5} className={styles.image_5}/>
             </div>
           </div>
+
+          <LinkContainer to="/alpine">
+            <ButtonToolbar className={styles.btn_wrap}>
+              <Button className={styles.btn_center}><i className="fa fa-chevron-left" /> Last Project</Button>
+            </ButtonToolbar>
+          </LinkContainer>
 
         </div>
       </div>
