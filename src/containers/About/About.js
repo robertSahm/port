@@ -30,11 +30,10 @@ class About extends Component {
       
           <div className={styles.about_content_wrap}>
             <div className={styles.about_headline}>
-              <h3>There's something you should know about me: <br />
-              <span className={styles.text_red}>I love making digital products.</span></h3>
+              <h3>Let's make something beautiful.</h3>
             </div>
      
-            <p>When I'm not making apps, I love to play drums and guitar. I've been playing and writing music the vast majority of my life, and it even earned me a spot playing drums for the indie rock band Le Loup. I spent the greater part of 3 years touring the US and Europe. <Link to="http://pitchfork.com/reviews/albums/13551-family/">Here's our last Pitchfork review.</Link></p>
+            <p>When I'm not making apps, I love to play drums and guitar. I've been playing and writing music the vast majority of my life, and it even earned me a spot playing drums for the indie rock band Le Loup. I spent the greater part of 3 years touring the US and Europe. <a href="http://pitchfork.com/reviews/albums/13551-family/" target="_blank" >Here's our last Pitchfork review.</a></p>
             <p>
               Navigating the decisions, personalities and solutions inherent in web development comes naturally after decades spent creating original music in a team environment.
             </p>
@@ -44,10 +43,11 @@ class About extends Component {
               <li>I spent 6 months in rural Thailand volunteering with Burmese refugees setting them up with Ubuntu computer labs, allowing the young battlefield medics to study.</li>
               <li>I played 4 years of varsity volleyball</li>
               <li>My 3 siblings are also musicians, though we never got around to doing the Partridge Family thing.</li>
-              <li>Between tours with the band I worked as a server at the finest (in my humble opinion) seafood restaurant in Washington D.C.: <Link to="http://www.blacksaltrestaurant.com/">Blacksalt</Link>.</li>
+              <li>Between tours with the band I worked as a server at the finest (in my humble opinion) seafood restaurant in Washington D.C.: <a href="http://www.blacksaltrestaurant.com/" target="_blank">Blacksalt</a>.</li>
               <li>You'll rarely find me dancing. This does not apply at weddings.</li>
             </ul>
           </div>
+
         </div>
       </div>
     )

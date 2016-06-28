@@ -69,7 +69,7 @@ class Navbar extends Component {
               <NavItem eventKey={3} title="About">About</NavItem>
             </LinkContainer>
             <li className={styles.mailto_wrap}>
-              <Mailto email="r@robertsahm.com" obfuscate={true}>
+              <Mailto email="rs@robertsahm.com" obfuscate={true}>
                 Email Me
               </Mailto>
             </li>
