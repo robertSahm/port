@@ -7,6 +7,7 @@ import UserProfile from 'containers/UserProfile/UserProfile'
 import RequireAuth from 'containers/Auth/RequireAuth'
 import {
     About,
+    AetherStore,
     Alpine,
     App,
     Carol,
@@ -14,7 +15,7 @@ import {
     Home,
     Lucera,
     NotFound,
-    Work, 
+    Work,
     Resume
   } from 'containers';
 
@@ -27,6 +28,7 @@ export default () => {
 
       {/* Routes */}
       <Route path="/about" component={About} />
+      <Route path="/aetherstore" component={AetherStore} />
       <Route path="/contact" component={Contact} />
       <Route path="/resume" component={Resume} />
       <Route path="/alpine" component={Alpine} />

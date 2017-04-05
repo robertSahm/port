@@ -36,7 +36,7 @@ class Navbar extends Component {
     } = this.state
 
     return (
-      <NavbarBS 
+      <NavbarBS
         fixedTop={true}
         className={styles.nav_wrap}
         expanded={this.state.expanded}
@@ -46,8 +46,8 @@ class Navbar extends Component {
         <NavbarBS.Toggle/>
         <NavbarBS.Collapse >
           <Nav
-            activeKey={this.state.activeTab} 
-            onSelect={this.handleSelect} 
+            activeKey={this.state.activeTab}
+            onSelect={this.handleSelect}
             className={styles.nav_nav}
             onSelect={() => this.setState({ expanded: false })}
           >
@@ -55,6 +55,9 @@ class Navbar extends Component {
               <NavItem eventKey={1}>Home</NavItem>
             </IndexLinkContainer>
             <NavDropdown eventKey={2} title="Work" id="nav-dropdown">
+              <LinkContainer to="/aetherstore">
+                <MenuItem eventKey="2.01">AetherWorks</MenuItem>
+              </LinkContainer>
               <LinkContainer to="/lucera">
                 <MenuItem eventKey="2.1">Lucera Financial Infrastructures</MenuItem>
               </LinkContainer>

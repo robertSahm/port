@@ -1,4 +1,5 @@
 export App from './App/App';
+export AetherStore from './AetherStore/AetherStore';
 export Home from './Home/Home';
 export RequireAuth from './Auth/RequireAuth';
 export Signin from './Auth/Signin';
